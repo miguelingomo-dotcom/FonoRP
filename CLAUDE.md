@@ -74,14 +74,14 @@ Mostrar la solución en grande, la respuesta del usuario con los fallos coloread
 - **Resumen de tanda**: aciertos, patrones donde más falla, botón para repetir los fallos.
 
 ## Progreso (localStorage)
-Por palabra: intentos, aciertos, última fecha. Por patrón: % de acierto. Pantalla de estadísticas sencilla. Sin repetición espaciada Leitner (descartada).
+Hecho. Clave `fonorp.progress` = `{ v: 1, words: { palabra: { a: intentos, c: aciertos, last: 'AAAA-MM-DD' } } }`. Cuentan las respuestas del modo app (al comprobar) y las autoevaluaciones del modo papel. Pantalla **Expediente** (botón en el inicio): palabras practicadas, intentos y % de acierto; acierto por patrón (más débil primero, con 10 casillas, en rojo por debajo del 50 %); las 8 que más fallas con "Practicar estas"; "Borrar expediente" con confirmación. Sin repetición espaciada Leitner (descartada).
 
 ## Orden de trabajo sugerido
 1. Tokenizador + normalizador + comparador con tests (una página `tests.html` con casos de `words.json`: la forma principal y todas las variantes deben dar correcto; casos de error conocidos deben detectar el fallo exacto).
 2. Teclado fonémico y pantalla de ejercicio.
 3. Feedback detallado.
-4. Progreso y estadísticas (sin Leitner).
-5. PWA y despliegue en GitHub Pages.
+4. Progreso y estadísticas (sin Leitner). Hecho.
+5. PWA y despliegue en GitHub Pages. Hecho.
 
 ## Publicación (PWA + GitHub Pages)
 - Repo público `miguelingomo-dotcom/FonoRP`, servido por GitHub Pages desde la rama `main` (raíz). URL: https://miguelingomo-dotcom.github.io/FonoRP/

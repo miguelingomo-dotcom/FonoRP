@@ -26,6 +26,22 @@
     lastResult: null,
   };
 
+  // ---------- Progreso (localStorage) ----------
+  // { v: 1, words: { [palabra]: { a: intentos, c: aciertos, last: 'AAAA-MM-DD' } } }
+  const PROGRESS_KEY = 'fonorp.progress';
+  const progress = {
+    load() { const d = store.get(PROGRESS_KEY, null); return d && d.v === 1 && d.words ? d : { v: 1, words: {} }; },
+    record(entry, ok) {
+      const d = this.load();
+      const w = d.words[entry.word] || { a: 0, c: 0, last: '' };
+      w.a++; if (ok) w.c++;
+      w.last = new Date().toISOString().slice(0, 10);
+      d.words[entry.word] = w;
+      store.set(PROGRESS_KEY, d);
+    },
+    clear() { try { localStorage.removeItem(PROGRESS_KEY); } catch { /* sin almacenamiento */ } },
+  };
+
   // ---------- Utilidades IPA ----------
   function ipaHTML(str) {
     return Fono.tokenize(str).map(t => {
@@ -143,6 +159,7 @@
   // ---------- Vistas ----------
   function go(view) {
     document.body.dataset.view = view;
+    if (view === 'stats') renderStats();
     if (view === 'home') { specimen.start(); requestAnimationFrame(() => ['mode-seg', 'level-seg', 'size-seg'].forEach(id => $(id)._place && $(id)._place())); }
     else specimen.clear();
     window.scrollTo(0, 0);
@@ -350,6 +367,7 @@
     const r = Fono.check(state.input.join(''), entry);
     state.lastResult = r;
     state.results[state.idx] = { entry, correct: r.correct, warn: r.correct && r.warnings.length > 0, typical: r.typical, answer: state.input.join('') };
+    progress.record(entry, r.correct);
     state.phase = 'review';
 
     $('stage').classList.add('is-review');
@@ -515,6 +533,7 @@
   function selfAssess(ok) {
     const entry = state.batch[state.idx];
     state.results[state.idx] = { entry, correct: ok, warn: false, typical: false, self: true };
+    progress.record(entry, ok);
     updateProgress();
     next();
   }
@@ -577,6 +596,65 @@
     $('again-btn').className = misses.length ? 'btn-secondary' : 'btn-primary';
     go('summary');
   }
+
+  // ---------- Expediente ----------
+  const pct = (c, a) => (a ? Math.round((c / a) * 100) : 0);
+  const ticks = p => {
+    const on = Math.round(p / 10);
+    return `<span class="st-ticks" aria-hidden="true">${Array.from({ length: 10 }, (_, i) => `<i class="${i < on ? 'on' : ''}"></i>`).join('')}</span>`;
+  };
+  let hardWords = [];
+
+  function renderStats() {
+    const rec = progress.load().words;
+    const all = state.data.words;
+    let a = 0, c = 0, practiced = 0;
+    for (const w of all) { const r = rec[w.word]; if (r) { a += r.a; c += r.c; practiced++; } }
+    $('stats-empty').hidden = a > 0;
+    $('stats-body').hidden = a === 0;
+    if (!a) return;
+
+    $('st-words').textContent = `${practiced}/${all.length}`;
+    $('st-attempts').textContent = a;
+    $('st-rate').textContent = `${pct(c, a)} %`;
+
+    // Por patrón: más débil primero; los que no tienen intentos, al final.
+    const rows = Object.keys(state.data.patterns).map(k => {
+      let pa = 0, pc = 0;
+      for (const w of all) if (w.patterns.includes(k) && rec[w.word]) { pa += rec[w.word].a; pc += rec[w.word].c; }
+      return { k, pa, pc, p: pct(pc, pa) };
+    }).sort((x, y) => (y.pa > 0) - (x.pa > 0) || x.p - y.p);
+    $('stats-patterns').innerHTML = rows.map(r =>
+      `<li class="${r.pa ? '' : 'is-none'} ${r.pa && r.p < 50 ? 'is-low' : ''}">` +
+      `<span class="st-name">${esc(PATTERN_LABEL[r.k] || r.k).replace(/\/[^\/]+\//g, m => `<span class="ipa">${m}</span>`)}</span>` +
+      (r.pa ? `${ticks(r.p)}<span class="st-pct">${r.p} %</span><span class="st-n">${r.pc}/${r.pa}</span>`
+            : `<span class="st-none">Sin intentos</span>`) +
+      `</li>`).join('');
+
+    // Las que más fallas: más fallos absolutos, luego peor proporción.
+    hardWords = all.filter(w => rec[w.word] && rec[w.word].a > rec[w.word].c)
+      .sort((x, y) => {
+        const rx = rec[x.word], ry = rec[y.word];
+        return (ry.a - ry.c) - (rx.a - rx.c) || (rx.c / rx.a) - (ry.c / ry.a);
+      }).slice(0, 8);
+    $('stats-hard-sec').hidden = !hardWords.length;
+    $('stats-hard').innerHTML = hardWords.map((w, i) => {
+      const r = rec[w.word];
+      return `<li style="--i:${i}"><span class="w" lang="en">${esc(w.word)}</span>` +
+        `<span class="st-hard-r"><span class="ipa">/${ipaHTML(w.ipa)}/</span><span class="st-n">${r.a - r.c} de ${r.a} mal</span></span></li>`;
+    }).join('');
+    $('stats-practice-label').textContent = `Practicar estas ${hardWords.length}`;
+  }
+
+  $('stats-btn').addEventListener('click', () => go('stats'));
+  $('stats-back').addEventListener('click', () => go('home'));
+  $('stats-start').addEventListener('click', () => go('home'));
+  $('stats-practice').addEventListener('click', () => { if (hardWords.length) startBatch(shuffle(hardWords)); });
+  $('stats-reset').addEventListener('click', () => {
+    if (window.confirm('¿Borrar todo tu expediente? Se perderán tus intentos y aciertos, y no se puede deshacer.')) {
+      progress.clear(); renderStats();
+    }
+  });
 
   $('retry-btn').addEventListener('click', () => {
     const misses = state.results.filter(r => r && !r.correct).map(r => r.entry);
