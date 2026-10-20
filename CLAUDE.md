@@ -88,5 +88,11 @@ Hecho. Clave `fonorp.progress` = `{ v: 1, words: { palabra: { a: intentos, c: ac
 - `sw.js` precarga la app (caché primero y refresco en segundo plano). **Al publicar cambios, sube `VERSION` en `sw.js`** (fonorp-v1 → v2…) y añade a `SHELL` cualquier archivo nuevo que necesite la app sin conexión.
 - Rutas siempre relativas (la app vive en `/FonoRP/`).
 
+## Banco ampliado (sin revisar)
+- `node tools/importar.mjs [N]` genera `banco/candidatas.json` (mismo esquema que `words.json` + `estado` y `fuentes`) y `banco/discrepancias.md`. Fuentes gratuitas: Britfone 3.0.1 (MIT, `tools/fuentes/`), Wiktionary RP vía kaikki.org (CC BY-SA, caché en `tools/.cache/`, fuera de git) y orden por frecuencia (`tools/fuentes/frecuencia.txt`, de wordfreq).
+- Normaliza a la convención EPD (ɡ, e, ʌ, eə, r, /i/ /u/ débiles, ˈ en monosílabos; /əl/ = /l̩/) y usa el corrector de `fono.js` para decidir si las fuentes coinciden.
+- Estados: `coinciden` (dos fuentes de acuerdo), `discrepan` (revisar en el EPD/LPD), `una-fuente` (solo Britfone). Excluye palabras gramaticales y nombres propios (salvo meses y días).
+- Patrones y nivel son heurísticos; las notas quedan vacías. Nada de este banco entra en `words.json` sin revisión de Miguel.
+
 ## Pendiente
 Revisar todas las transcripciones de `words.json` contra el Cambridge English Pronouncing Dictionary o el Longman Pronunciation Dictionary. Se publicó sin esta revisión por decisión de Miguel (uso personal y amigos).

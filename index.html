@@ -68,6 +68,12 @@
         <div class="segmented mode" id="mode-seg" role="radiogroup" aria-label="Modo"></div>
       </fieldset>
 
+      <fieldset class="field" id="bank-field" hidden>
+        <legend class="field-label">Banco de palabras</legend>
+        <div class="segmented mode" id="bank-seg" role="radiogroup" aria-label="Banco de palabras"></div>
+        <p class="pattern-desc" id="bank-desc"></p>
+      </fieldset>
+
       <div class="field-row">
         <fieldset class="field">
           <legend class="field-label">Nivel</legend>
@@ -120,7 +126,7 @@
     <div class="stage" id="stage">
       <div class="stage-inner" id="stage-inner">
         <div class="prompt">
-          <div class="field-label">Palabra</div>
+          <div class="field-label" id="word-label">Palabra</div>
           <div class="prompt-row">
             <h2 class="word" id="word" lang="en"></h2>
             <button class="audio-btn" id="audio-btn" type="button" aria-label="Escuchar la palabra" hidden>

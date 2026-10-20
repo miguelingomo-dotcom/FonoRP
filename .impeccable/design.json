@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T11:20:01+00:00",
+  "generatedAt": "2026-10-20T14:00:00+00:00",
   "title": "Design System: FonoRP",
   "extensions": {
     "colorMeta": {
@@ -355,6 +355,198 @@
           "#c9bffe",
           "#efe5ff"
         ]
+      },
+      "stamp-soft": {
+        "role": "primary",
+        "displayName": "Tampón diluido",
+        "purpose": "Casilla actual del progreso y selección de texto.",
+        "dark": "rgb(171 159 242 / .15)"
+      },
+      "pen-soft": {
+        "role": "secondary",
+        "displayName": "Corrector diluido",
+        "purpose": "Fondo de la casilla fallada.",
+        "dark": "rgb(255 125 97 / .13)"
+      },
+      "warn-soft": {
+        "role": "tertiary",
+        "displayName": "Ámbar diluido",
+        "purpose": "Fondo del aviso de acento secundario.",
+        "dark": "rgb(232 176 75 / .14)"
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Filete suave",
+        "purpose": "Borde de chips sin marcar, Nota y casilla del cursor.",
+        "dark": "rgb(233 237 243 / .14)"
+      },
+      "z-mark-ex": {
+        "role": "neutral",
+        "displayName": "Ejemplo en tecla oscura",
+        "purpose": "Palabra de ejemplo en teclas de marca y extras.",
+        "dark": "#a3abb7"
+      },
+      "bg-dark": {
+        "role": "neutral",
+        "displayName": "Papel de oficio (oscuro)",
+        "canonical": "#111318",
+        "darkOf": "bg"
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Impreso (oscuro)",
+        "canonical": "#191c23",
+        "darkOf": "surface"
+      },
+      "surface-2-dark": {
+        "role": "neutral",
+        "displayName": "Gris de carpeta (oscuro)",
+        "canonical": "#252a35",
+        "darkOf": "surface-2"
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Tinta (oscuro)",
+        "canonical": "#e9edf3",
+        "darkOf": "ink"
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Lápiz (oscuro)",
+        "canonical": "#b0b8c4",
+        "darkOf": "muted"
+      },
+      "faint-dark": {
+        "role": "neutral",
+        "displayName": "Lápiz suave (oscuro)",
+        "canonical": "#98a1ae",
+        "darkOf": "faint"
+      },
+      "rule-dark": {
+        "role": "neutral",
+        "displayName": "Filete de tinta (oscuro)",
+        "canonical": "#aeb7c4",
+        "darkOf": "rule"
+      },
+      "rule-soft-dark": {
+        "role": "neutral",
+        "displayName": "Filete suave (oscuro)",
+        "canonical": "rgb(233 237 243 / .14)",
+        "darkOf": "rule-soft"
+      },
+      "stamp-dark": {
+        "role": "primary",
+        "displayName": "Violeta de tampón (oscuro)",
+        "canonical": "#ab9ff2",
+        "darkOf": "stamp"
+      },
+      "stamp-ink-dark": {
+        "role": "primary",
+        "displayName": "Tinta sobre violeta (oscuro)",
+        "canonical": "#17122f",
+        "darkOf": "stamp-ink"
+      },
+      "stamp-soft-dark": {
+        "role": "primary",
+        "displayName": "Tampón diluido (oscuro)",
+        "canonical": "rgb(171 159 242 / .15)",
+        "darkOf": "stamp-soft"
+      },
+      "stamp-hover-dark": {
+        "role": "primary",
+        "displayName": "Violeta de tampón (hover) (oscuro)",
+        "canonical": "#c0b6f6",
+        "darkOf": "stamp-hover"
+      },
+      "pen-dark": {
+        "role": "secondary",
+        "displayName": "Rojo de corrector (oscuro)",
+        "canonical": "#ff7d61",
+        "darkOf": "pen"
+      },
+      "pen-soft-dark": {
+        "role": "secondary",
+        "displayName": "Corrector diluido (oscuro)",
+        "canonical": "rgb(255 125 97 / .13)",
+        "darkOf": "pen-soft"
+      },
+      "warn-dark": {
+        "role": "tertiary",
+        "displayName": "Ámbar de observación (oscuro)",
+        "canonical": "#e8b04b",
+        "darkOf": "warn"
+      },
+      "warn-soft-dark": {
+        "role": "tertiary",
+        "displayName": "Ámbar diluido (oscuro)",
+        "canonical": "rgb(232 176 75 / .14)",
+        "darkOf": "warn-soft"
+      },
+      "tray-dark": {
+        "role": "neutral",
+        "displayName": "Bandeja de tinta (oscuro)",
+        "canonical": "#08090c",
+        "darkOf": "tray"
+      },
+      "z-vowel-dark": {
+        "role": "neutral",
+        "displayName": "Zona vocales (oscuro)",
+        "canonical": "#2e3a4d",
+        "darkOf": "z-vowel"
+      },
+      "z-diph-dark": {
+        "role": "neutral",
+        "displayName": "Zona diptongos (oscuro)",
+        "canonical": "#3f3577",
+        "darkOf": "z-diph"
+      },
+      "z-cons-dark": {
+        "role": "neutral",
+        "displayName": "Zona consonantes (oscuro)",
+        "canonical": "#1a1d24",
+        "darkOf": "z-cons"
+      },
+      "z-ink-dark": {
+        "role": "neutral",
+        "displayName": "Tinta de tecla (oscuro)",
+        "canonical": "#e9edf3",
+        "darkOf": "z-ink"
+      },
+      "z-ex-dark": {
+        "role": "neutral",
+        "displayName": "Ejemplo de tecla (oscuro)",
+        "canonical": "#aab3bf",
+        "darkOf": "z-ex"
+      },
+      "z-extra-line-dark": {
+        "role": "neutral",
+        "displayName": "Filete de extras (oscuro)",
+        "canonical": "#6b7482",
+        "darkOf": "z-extra-line"
+      },
+      "z-extra-ink-dark": {
+        "role": "neutral",
+        "displayName": "Tinta de extras (oscuro)",
+        "canonical": "#e9edf3",
+        "darkOf": "z-extra-ink"
+      },
+      "z-mark-dark": {
+        "role": "neutral",
+        "displayName": "Tecla de marca (oscuro)",
+        "canonical": "#171a21",
+        "darkOf": "z-mark"
+      },
+      "z-mark-ink-dark": {
+        "role": "neutral",
+        "displayName": "Tinta de marca (oscuro)",
+        "canonical": "#ab9ff2",
+        "darkOf": "z-mark-ink"
+      },
+      "z-mark-ex-dark": {
+        "role": "neutral",
+        "displayName": "Ejemplo en tecla oscura (oscuro)",
+        "canonical": "#a3abb7",
+        "darkOf": "z-mark-ex"
       }
     },
     "typographyMeta": {
@@ -365,10 +557,6 @@
       "headline": {
         "displayName": "Título del acta",
         "purpose": "Título del resumen de tanda."
-      },
-      "ipa-display": {
-        "displayName": "IPA grande",
-        "purpose": "Transcripción modelo y ejemplo de portada."
       },
       "ipa-casilla": {
         "displayName": "IPA de casilla",
@@ -388,7 +576,91 @@
       },
       "stamp": {
         "displayName": "Sello",
-        "purpose": "APTO / REVISAR y la puntuación del acta; único uso de mayúsculas espaciadas (subtítulo del sello)."
+        "purpose": "APTO / REVISAR."
+      },
+      "figure": {
+        "displayName": "Cifra del Expediente",
+        "purpose": "Valores de la cabecera del Expediente (22px, 800, tabular)."
+      },
+      "list-word": {
+        "displayName": "Palabra de lista",
+        "purpose": "Palabra en la lista del acta y en «Las que más fallas»."
+      },
+      "title-sm": {
+        "displayName": "Acción pequeña",
+        "purpose": "Botón Expediente, enlaces de acción y valores de la cabecera de formulario."
+      },
+      "body-lg": {
+        "displayName": "Texto destacado",
+        "purpose": "Frase de puntuación del acta; Comprobar en la bandeja a peso 700."
+      },
+      "body-note": {
+        "displayName": "Explicación",
+        "purpose": "Explicación de cada error y texto de la Nota."
+      },
+      "body-sm": {
+        "displayName": "Texto de control",
+        "purpose": "Chips, segmentado, ejemplo de portada, modo papel, filas de patrón."
+      },
+      "hint": {
+        "displayName": "Pista",
+        "purpose": "Descripción del patrón, variantes, aviso de selección vacía, patrones fallados."
+      },
+      "hint-sm": {
+        "displayName": "Pista de respuesta",
+        "purpose": "Pista bajo la fila de casillas."
+      },
+      "count": {
+        "displayName": "Recuento",
+        "purpose": "Aciertos/intentos y «n de m mal» en el Expediente."
+      },
+      "label-num": {
+        "displayName": "Número de error",
+        "purpose": "Número rojo sobre la casilla y en la lista de explicaciones."
+      },
+      "label-xs": {
+        "displayName": "Ejemplo de tecla",
+        "purpose": "Palabra de ejemplo bajo cada tecla (móvil)."
+      },
+      "label-xs-desktop": {
+        "displayName": "Ejemplo de tecla (escritorio)",
+        "purpose": "Palabra de ejemplo bajo cada tecla a partir de 900px."
+      },
+      "stamp-score": {
+        "displayName": "Sello de puntuación",
+        "purpose": "Puntuación del acta grabada en el sello a 64px."
+      },
+      "stamp-sub": {
+        "displayName": "Subtítulo del sello",
+        "purpose": "«Tribunal FonoRP»; únicas mayúsculas espaciadas del sistema."
+      },
+      "ipa-model": {
+        "displayName": "IPA modelo",
+        "purpose": "Transcripción modelo en la corrección."
+      },
+      "ipa-specimen": {
+        "displayName": "IPA de portada",
+        "purpose": "Ejemplo animado de la portada."
+      },
+      "ipa-mark-key": {
+        "displayName": "Marca en tecla",
+        "purpose": "ˈ ˌ . en las teclas de marca."
+      },
+      "ipa-key-desktop": {
+        "displayName": "IPA de tecla (escritorio)",
+        "purpose": "Símbolo de tecla a partir de 900px."
+      },
+      "ipa-key": {
+        "displayName": "IPA de tecla",
+        "purpose": "Símbolo de tecla en móvil; IPA de la lista del acta."
+      },
+      "ipa-inline": {
+        "displayName": "IPA en línea",
+        "purpose": "Variantes aceptadas bajo el modelo."
+      },
+      "ipa-key-review": {
+        "displayName": "IPA de tecla compacta",
+        "purpose": "Tabla compacta durante la revisión (<900px)."
       }
     },
     "shadows": [
@@ -450,6 +722,48 @@
         "name": "desktop",
         "value": "900px"
       }
+    ],
+    "colorScheme": {
+      "dark": {
+        "media": "(prefers-color-scheme: dark)",
+        "tokens": {
+          "bg": "bg-dark",
+          "surface": "surface-dark",
+          "surface-2": "surface-2-dark",
+          "ink": "ink-dark",
+          "muted": "muted-dark",
+          "faint": "faint-dark",
+          "rule": "rule-dark",
+          "rule-soft": "rule-soft-dark",
+          "stamp": "stamp-dark",
+          "stamp-ink": "stamp-ink-dark",
+          "stamp-soft": "stamp-soft-dark",
+          "stamp-hover": "stamp-hover-dark",
+          "pen": "pen-dark",
+          "pen-soft": "pen-soft-dark",
+          "warn": "warn-dark",
+          "warn-soft": "warn-soft-dark",
+          "tray": "tray-dark",
+          "z-vowel": "z-vowel-dark",
+          "z-diph": "z-diph-dark",
+          "z-cons": "z-cons-dark",
+          "z-ink": "z-ink-dark",
+          "z-ex": "z-ex-dark",
+          "z-extra-line": "z-extra-line-dark",
+          "z-extra-ink": "z-extra-ink-dark",
+          "z-mark": "z-mark-dark",
+          "z-mark-ink": "z-mark-ink-dark",
+          "z-mark-ex": "z-mark-ex-dark"
+        },
+        "shadow": "0 1px 2px rgb(0 0 0 / .35), 0 10px 28px rgb(0 0 0 / .3)"
+      }
+    },
+    "rounded": [
+      {
+        "name": "tick",
+        "value": "1px",
+        "purpose": "Casillas de progreso (8px) y del Expediente (7×12px); extremos del aspa del chip."
+      }
     ]
   },
   "components": [
@@ -468,6 +782,14 @@
       "description": "Acción alternativa con filete de tinta (Volver al inicio, Ver solución).",
       "html": "<button class=\"ds-btn-secondary\">Volver al inicio</button>",
       "css": ".ds-btn-secondary { font-family: var(--font-ui); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 20px; border: 0; border-radius: var(--r-ctl, 4px); background: transparent; color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); font-weight: 700; font-stretch: 88%; font-size: 17px; cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease; } .ds-btn-secondary:hover { background: var(--surface-2); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }"
+    },
+    {
+      "name": "Botón Expediente",
+      "kind": "button",
+      "refersTo": "button-record",
+      "description": "Acceso al Expediente desde la portada: filete de tinta, icono violeta.",
+      "html": "<button class=\"ds-btn-record\"><svg class=\"ds-ic\" viewBox=\"0 0 256 256\" aria-hidden=\"true\"><path d=\"M168,152a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,152Zm-8-40H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm56-64V216a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V48A16,16,0,0,1,56,32H92.26a47.92,47.92,0,0,1,71.48,0H200A16,16,0,0,1,216,48ZM96,64h64a32,32,0,0,0-64,0ZM200,48H173.25A47.93,47.93,0,0,1,176,64v8a8,8,0,0,1-8,8H88a8,8,0,0,1-8-8V64a47.930,47.930,0,0,1,2.75-16H56V216H200Z\"/></svg>Expediente</button>",
+      "css": ".ds-btn-record { font-family: var(--font-ui); display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 0 12px 0 10px; border: 0; border-radius: var(--r-ctl, 4px); background: transparent; color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); font-size: 15px; font-weight: 700; font-stretch: 88%; cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease; } .ds-ic { width: 1.25em; height: 1.25em; fill: var(--stamp); } .ds-btn-record:hover { background: var(--surface-2); } .ds-btn-record:active { transform: scale(0.97); } .ds-btn-record:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }"
     },
     {
       "name": "Chip de patrón",
@@ -513,7 +835,7 @@
       "name": "Bandeja fonémica",
       "kind": "custom",
       "refersTo": "key-vowel",
-      "description": "Tabla de Underhill sobre bandeja de tinta con zonas de color plano; extras discontinuas.",
+      "description": "Tabla de Underhill sobre bandeja de tinta con zonas de color plano; extras discontinuas. En escritorio la bandeja lleva esquinas de 3px (r-box) y la sombra de bandeja elevada.",
       "html": "<div class=\"ds-tray\"><button class=\"ds-key ds-v\"><span class=\"ds-sym\">ə</span><span class=\"ds-ex\">about</span></button><button class=\"ds-key ds-d\"><span class=\"ds-sym\">eɪ</span><span class=\"ds-ex\">day</span></button><button class=\"ds-key ds-x\"><span class=\"ds-sym\">i</span><span class=\"ds-ex\">happy</span></button><button class=\"ds-key\"><span class=\"ds-sym\">θ</span><span class=\"ds-ex\">thin</span></button><button class=\"ds-key ds-m\"><span class=\"ds-sym\">ˈ</span><span class=\"ds-ex\">tónica</span></button></div>",
       "css": ".ds-tray { display: grid; grid-template-columns: repeat(5, 64px); gap: 4px; padding: 8px; background: var(--tray); font-family: var(--font-ui); } .ds-key { min-height: 48px; border: 0; border-radius: 3px; background: var(--z-cons); color: var(--z-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: transform 110ms var(--ease-out); } .ds-key:active { transform: scale(0.93); } .ds-key:hover { filter: brightness(1.06); } .ds-key:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; } .ds-v { background: var(--z-vowel); } .ds-d { background: var(--z-diph); } .ds-x { background: transparent; color: var(--z-extra-ink); border: var(--line, 1.5px) dashed var(--z-extra-line); } .ds-m { background: var(--z-mark); color: var(--z-mark-ink); } .ds-sym { font-family: var(--font-ipa); font-size: 19px; line-height: 1.15; } .ds-ex { font-size: 11px; font-stretch: 85%; line-height: 1.1; color: var(--z-ex); } .ds-x .ds-ex, .ds-m .ds-ex { color: var(--z-mark-ex); }"
     },
@@ -524,6 +846,14 @@
       "description": "Tira de celdas Ejercicio / Nivel / Patrón con casillas de progreso.",
       "html": "<div class=\"ds-head\"><div class=\"ds-cell\"><span class=\"ds-l\">Ejercicio</span><span class=\"ds-v\">02/05</span><ol class=\"ds-prog\"><li class=\"bad\"></li><li class=\"cur\"></li><li></li><li></li><li></li></ol></div><div class=\"ds-cell\"><span class=\"ds-l\">Nivel</span><span class=\"ds-v\">2</span></div><div class=\"ds-cell\"><span class=\"ds-l\">Patrón</span><span class=\"ds-v\">La r de RP</span></div></div>",
       "css": ".ds-head { font-family: var(--font-ui); display: grid; grid-template-columns: auto auto minmax(0, 1fr); background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); border-radius: var(--r-box, 3px); } .ds-cell { padding: 5px 9px 6px; display: grid; gap: 1px; } .ds-cell + .ds-cell { box-shadow: inset var(--line, 1.5px) 0 0 var(--rule); } .ds-l { font-size: 12.5px; font-weight: 600; font-stretch: 80%; color: var(--muted); } .ds-v { font-size: 15px; font-weight: 700; font-stretch: 85%; font-variant-numeric: tabular-nums; } .ds-prog { list-style: none; margin: 3px 0 0; padding: 0; display: flex; gap: 3px; } .ds-prog li { width: 8px; height: 8px; border: 1.5px solid var(--rule); border-radius: 1px; } .ds-prog li.cur { border-color: var(--stamp); background: var(--stamp-soft); } .ds-prog li.bad { background: var(--pen); border-color: var(--pen); }"
+    },
+    {
+      "name": "Expediente",
+      "kind": "card",
+      "refersTo": "pattern-row",
+      "description": "Cabecera de tres cifras y acierto por patrón con diez casillas; por debajo del 50 % en rojo.",
+      "html": "<div class=\"ds-st\"><div class=\"ds-sh\"><div class=\"ds-c\"><span class=\"ds-l\">Palabras practicadas</span><span class=\"ds-v\">42/123</span></div><div class=\"ds-c\"><span class=\"ds-l\">Intentos</span><span class=\"ds-v\">118</span></div><div class=\"ds-c\"><span class=\"ds-l\">Acierto</span><span class=\"ds-v\">64 %</span></div></div><ul class=\"ds-pl\"><li class=\"low\"><span class=\"ds-n\">Schwa</span><span class=\"ds-t\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class=\"ds-p\">38 %</span><span class=\"ds-k\">8/21</span></li><li><span class=\"ds-n\">La r de RP</span><span class=\"ds-t\"><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span><span class=\"ds-p\">81 %</span><span class=\"ds-k\">13/16</span></li></ul><button class=\"ds-reset\">Borrar expediente</button></div>",
+      "css": ".ds-st { font-family: var(--font-ui); color: var(--ink); display: grid; gap: 18px; } .ds-sh { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); background: var(--surface); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); border-radius: var(--r-box, 3px); } .ds-c { padding: 5px 9px 6px; display: grid; gap: 1px; } .ds-c + .ds-c { box-shadow: inset var(--line, 1.5px) 0 0 var(--rule); } .ds-l { font-size: 12.5px; font-weight: 600; font-stretch: 80%; color: var(--muted); } .ds-v { font-size: 22px; font-weight: 800; font-stretch: 75%; font-variant-numeric: tabular-nums; } .ds-pl { list-style: none; margin: 0; padding: 0; display: grid; background: var(--surface); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); border-radius: var(--r-box, 3px); } .ds-pl li { display: grid; grid-template-columns: minmax(0, 1fr) auto 3.4em 3.4em; align-items: center; gap: 10px; padding: 10px 12px; font-size: 15px; } .ds-pl li + li { box-shadow: inset 0 var(--line, 1.5px) 0 var(--rule); } .ds-n { font-weight: 600; } .ds-t { display: inline-flex; gap: 2px; } .ds-t i { width: 7px; height: 12px; border: 1.5px solid var(--rule); border-radius: 1px; } .ds-t i.on { background: var(--ink); } .low .ds-t i { border-color: var(--pen); } .low .ds-t i.on { background: var(--pen); } .ds-p { font-weight: 800; font-stretch: 85%; text-align: right; font-variant-numeric: tabular-nums; } .low .ds-p { color: var(--pen); } .ds-k { font-size: 13px; color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; } .ds-reset { font: inherit; justify-self: center; min-height: 52px; padding: 0 20px; border: 0; background: none; border-radius: var(--r-ctl, 4px); color: var(--pen); font-weight: 700; font-stretch: 88%; font-size: 17px; cursor: pointer; } .ds-reset:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }"
     }
   ],
   "narrative": {
@@ -574,14 +904,14 @@
       "**Do** comunicar cada estado por forma además de por color: tachado, hueco discontinuo, número de error, peso del acento.",
       "**Do** reservar `cubic-bezier(0.2, 1.3, 0.4, 1)` para el sello; el resto del movimiento usa `cubic-bezier(0.23, 1, 0.32, 1)` entre 140 y 300ms.",
       "**Do** mantener en movimiento reducido los fundidos (200ms) y quitar todo desplazamiento, escala y tachado animado.",
-      "**Do** declarar cada color nuevo en `:root` con su pareja en el bloque oscuro."
+      "**Do** declarar cada color nuevo en `:root` con su pareja en el bloque oscuro, y registrar esa pareja en DESIGN.md como token `-dark`."
     ],
     "donts": [
       "**Don't** redibujar el logo ni imitarlo con texto en una fuente.",
       "**Don't** usar verde, ni ningún tercer color de acierto o error.",
       "**Don't** usar el ámbar para nada que no sea la observación del acento secundario.",
       "**Don't** marcar el acento primario duplicando el trazo; se distingue por peso 800.",
-      "**Don't** redondear en píldora ni salirse de la escala 2/3/4/6px.",
+      "**Don't** redondear en píldora ni salirse de la escala 1/2/3/4/6px; 6px es solo el sello.",
       "**Don't** usar sombras difusas en campos o casillas; solo la bandeja de escritorio lleva sombra.",
       "**Don't** añadir otra curva con rebote ni animar la escritura más allá de la aparición de la casilla.",
       "**Don't** escribir símbolos IPA en Archivo ni dibujar iconos a mano; los iconos son Phosphor (regular) incrustados como SVG."

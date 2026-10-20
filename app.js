@@ -20,7 +20,8 @@
 
   const state = {
     data: null,
-    settings: Object.assign({ mode: 'app', pattern: 'all', level: 'all', size: '10' }, store.get('fonorp.settings', {})),
+    settings: Object.assign({ mode: 'app', bank: 'revisado', pattern: 'all', level: 'all', size: '10' }, store.get('fonorp.settings', {})),
+    extra: [],   // banco ampliado sin revisar (banco/candidatas.json), sin las palabras con discrepancia
     batch: [], idx: 0, results: [],
     input: [], phase: 'input', // input | review | paper | paper-review
     lastResult: null,
@@ -82,9 +83,13 @@
   }
 
   // ---------- Inicio ----------
+  // Banco activo: el revisado (words.json) o el revisado más el ampliado sin revisar.
+  const allWords = () => state.data.words.concat(state.extra);
+  const bankWords = () => (state.settings.bank === 'ampliado' && state.extra.length ? allWords() : state.data.words);
+
   function filteredWords() {
     const { pattern, level } = state.settings;
-    return state.data.words.filter(w =>
+    return bankWords().filter(w =>
       (pattern === 'all' || w.patterns.includes(pattern)) && (level === 'all' || String(w.level) === level));
   }
 
@@ -100,14 +105,32 @@
     $('pattern-desc').textContent = p === 'all' ? 'Todas las palabras mezcladas.' : state.data.patterns[p] || '';
   }
 
-  function buildHome() {
-    const words = state.data.words;
+  function renderChips() {
+    const words = bankWords();
     const chips = [['all', 'Todos', words.length]].concat(Object.keys(state.data.patterns).map(k =>
       [k, PATTERN_LABEL[k] || k, words.filter(w => w.patterns.includes(k)).length]));
-    const chipsEl = $('pattern-chips');
-    chipsEl.innerHTML = chips.map(([k, label, n]) =>
+    $('pattern-chips').innerHTML = chips.map(([k, label, n]) =>
       `<button type="button" class="chip" role="radio" data-v="${esc(k)}" aria-checked="${k === state.settings.pattern}">` +
       `<span class="chip-box" aria-hidden="true"></span><span>${label.replace(/\/[^\/]+\//g, m => `<span class="ipa">${esc(m)}</span>`)}</span><span class="chip-count">${n}</span></button>`).join('');
+  }
+
+  function renderBankDesc() {
+    $('bank-desc').textContent = state.settings.bank === 'ampliado'
+      ? `Suma ${state.extra.length} palabras frecuentes de Britfone y Wiktionary, sin revisar contra el EPD y sin notas.`
+      : 'Las palabras revisadas, con nota y error típico.';
+  }
+
+  function buildHome() {
+    if (state.extra.length) {
+      $('bank-field').hidden = false;
+      const banks = [['revisado', `Revisado · ${state.data.words.length}`], ['ampliado', `Ampliado · ${allWords().length}`]];
+      buildSegmented($('bank-seg'), banks, state.settings.bank, v => {
+        state.settings.bank = v; saveSettings(); renderChips(); renderBankDesc(); updateStart();
+      });
+      renderBankDesc();
+    } else state.settings.bank = 'revisado';
+    renderChips();
+    const chipsEl = $('pattern-chips');
     chipsEl.addEventListener('click', e => {
       const b = e.target.closest('.chip');
       if (!b) return;
@@ -160,7 +183,7 @@
   function go(view) {
     document.body.dataset.view = view;
     if (view === 'stats') renderStats();
-    if (view === 'home') { specimen.start(); requestAnimationFrame(() => ['mode-seg', 'level-seg', 'size-seg'].forEach(id => $(id)._place && $(id)._place())); }
+    if (view === 'home') { specimen.start(); requestAnimationFrame(() => ['mode-seg', 'bank-seg', 'level-seg', 'size-seg'].forEach(id => $(id)._place && $(id)._place())); }
     else specimen.clear();
     window.scrollTo(0, 0);
   }
@@ -277,6 +300,7 @@
       state.phase = mode === 'paper' ? 'paper' : 'input';
 
       $('word').textContent = entry.word;
+      $('word-label').textContent = entry.estado ? 'Palabra · sin revisar' : 'Palabra';
       $('word').setAttribute('lang', 'en');
       fitWord();
       $('meta-level').textContent = entry.level;
@@ -607,7 +631,7 @@
 
   function renderStats() {
     const rec = progress.load().words;
-    const all = state.data.words;
+    const all = allWords();
     let a = 0, c = 0, practiced = 0;
     for (const w of all) { const r = rec[w.word]; if (r) { a += r.a; c += r.c; practiced++; } }
     $('stats-empty').hidden = a > 0;
@@ -678,6 +702,12 @@
       document.querySelector('.home-sub').textContent = 'No se pudieron cargar las palabras. Recarga la página.';
       return;
     }
+    // Banco ampliado: opcional. Si no carga, la app sigue con el revisado.
+    try {
+      const known = new Set(state.data.words.map(w => w.word.toLowerCase()));
+      const cand = await (await fetch('banco/candidatas.json')).json();
+      state.extra = cand.words.filter(w => w.estado !== 'discrepan' && !known.has(w.word.toLowerCase()));
+    } catch { state.extra = []; }
     buildHome();
     buildKeyboard();
     if (speech.ok) { speech.pick(); speechSynthesis.addEventListener?.('voiceschanged', () => speech.pick()); }
