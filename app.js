@@ -606,4 +606,9 @@
     go('home');
   }
   init();
+
+  // PWA: funciona sin conexión una vez cargada.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => { /* sin SW: la app sigue funcionando en línea */ }));
+  }
 })();

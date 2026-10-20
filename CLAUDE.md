@@ -83,5 +83,10 @@ Por palabra: intentos, aciertos, última fecha. Por patrón: % de acierto. Panta
 4. Progreso y estadísticas (sin Leitner).
 5. PWA y despliegue en GitHub Pages.
 
-## Pendiente antes de publicar
-Revisar todas las transcripciones de `words.json` contra el Cambridge English Pronouncing Dictionary o el Longman Pronunciation Dictionary.
+## Publicación (PWA + GitHub Pages)
+- Repo público `miguelingomo-dotcom/FonoRP`, servido por GitHub Pages desde la rama `main` (raíz). URL: https://miguelingomo-dotcom.github.io/FonoRP/
+- `sw.js` precarga la app (caché primero y refresco en segundo plano). **Al publicar cambios, sube `VERSION` en `sw.js`** (fonorp-v1 → v2…) y añade a `SHELL` cualquier archivo nuevo que necesite la app sin conexión.
+- Rutas siempre relativas (la app vive en `/FonoRP/`).
+
+## Pendiente
+Revisar todas las transcripciones de `words.json` contra el Cambridge English Pronouncing Dictionary o el Longman Pronunciation Dictionary. Se publicó sin esta revisión por decisión de Miguel (uso personal y amigos).
