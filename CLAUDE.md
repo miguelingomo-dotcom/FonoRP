@@ -92,7 +92,8 @@ Hecho. Clave `fonorp.progress` = `{ v: 1, words: { palabra: { a: intentos, c: ac
 ## Banco ampliado (sin revisar)
 - `node tools/importar.mjs [N]` genera `banco/candidatas.json` (mismo esquema que `words.json` + `estado` y `fuentes`) y `banco/discrepancias.md`. Fuentes gratuitas: Britfone 3.0.1 (MIT, `tools/fuentes/`), Wiktionary RP vía kaikki.org (CC BY-SA, caché en `tools/.cache/`, fuera de git) y orden por frecuencia (`tools/fuentes/frecuencia.txt`, de wordfreq).
 - Normaliza a la convención EPD (ɡ, e, ʌ, eə, r, /i/ /u/ débiles, ˈ en monosílabos; /əl/ = /l̩/) y usa el corrector de `fono.js` para decidir si las fuentes coinciden.
-- Estados: `coinciden` (dos fuentes de acuerdo), `discrepan` (revisar en el EPD/LPD), `una-fuente` (solo Britfone). Excluye palabras gramaticales y nombres propios (salvo meses y días).
+- Estados: `coinciden` (dos fuentes de acuerdo), `discrepan` (revisar en el EPD/LPD), `una-fuente` (solo Britfone). Excluye palabras gramaticales, coloquiales, malsonantes, nombres propios (salvo meses y días) y grafías americanas cuando existe la británica (color → colour); las de -ize se quedan.
+- Lote actual (2026-10-21): 2000 palabras → 1808 coinciden, 66 discrepan (fuera de la app), 126 solo Britfone. `banco/discrepancias.md` lista las discrepancias y las de una sola fuente. Revisión manual de 100 palabras de muestra (60 al azar + 40 de nivel 3): sin errores de transcripción.
 - Patrones y nivel son heurísticos; las notas quedan vacías. Nada de este banco entra en `words.json` sin revisión de Miguel.
 
 ## Pendiente

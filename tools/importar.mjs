@@ -23,7 +23,7 @@ mkdirSync(CACHE, { recursive: true });
 mkdirSync(join(ROOT, 'banco'), { recursive: true });
 
 // Palabras gramaticales: su pronunciación RP depende de la forma débil; no entran.
-const STOP = new Set(`gonna wanna gotta okay the and for that you with this was are have not but from your all can has more will one about they their what which when out there been would also some were other into than them only its any how our these most could over such just very where much then those should may did because does each while through same own both under being here many again after before must might shall upon whom whose why yet onto unto per via among against without within though although whether either neither nor every another anything something nothing everything everyone someone anyone who whoever wherever whenever however herself himself itself myself ourselves themselves yourself mine ours yours hers theirs his her him she he it we us me my i is am be do done had having get got let use used`.split(/\s+/));
+const STOP = new Set(`gonna wanna gotta okay kinda sorta yeah yep nope lol the and for that you with this was are have not but from your all can has more will one about they their what which when out there been would also some were other into than them only its any how our these most could over such just very where much then those should may did because does each while through same own both under being here many again after before must might shall upon whom whose why yet onto unto per via among against without within though although whether either neither nor every another anything something nothing everything everyone someone anyone who whoever wherever whenever however herself himself itself myself ourselves themselves yourself mine ours yours hers theirs his her him she he it we us me my i is am be do done had having get got let use used`.split(/\s+/));
 
 // ---------- Normalización a la convención de la app (EPD) ----------
 const unknownFree = s => s && Fono.parse(s).unknown.length === 0 && Fono.parse(s).phonemes.length > 0;
@@ -186,6 +186,38 @@ function levelFor(ipa, pats) {
   return lvl;
 }
 
+// Grafías americanas: fuera cuando Britfone tiene la británica (color → colour, center → centre).
+// Las de -ize se quedan: también son grafía británica válida.
+function britishSpelling(w) {
+  const subs = [[/or(s?)$/, 'our$1'], [/er(s?)$/, 're$1'], [/yze(s|d)?$/, 'yse$1'], [/eled$/, 'elled'], [/eling$/, 'elling'],
+    [/ense$/, 'ence'], [/og(s?)$/, 'ogue$1'], [/ior(s?)$/, 'iour$1'], [/ors?$/, m => m.replace('or', 'our')]];
+  for (const [re, rep] of subs) { const b = w.replace(re, rep); if (b !== w && britfone.has(b)) return b; }
+  return null;
+}
+// Nombre propio: la página con mayúscula de Wiktionary es un nombre (pos "name") y la de minúscula
+// apenas tiene acepciones (manchester, alexander), así que bill, turkey o china se quedan.
+function senseCount(word) {
+  const file = join(CACHE, 'lc_' + word + '.jsonl');
+  if (!existsSync(file)) return 0;
+  return readFileSync(file, 'utf8').split('\n').reduce((n, l) => {
+    if (!l.trim()) return n;
+    try { const e = JSON.parse(l); return e.lang === 'English' ? n + (e.senses || []).length : n; } catch { return n; }
+  }, 0);
+}
+async function isProperNoun(word) {
+  const W = word[0].toUpperCase() + word.slice(1);
+  const file = join(CACHE, 'uc_' + W + '.jsonl');
+  let text;
+  if (existsSync(file)) text = readFileSync(file, 'utf8');
+  else {
+    const res = await fetch(`https://kaikki.org/dictionary/English/meaning/${encodeURIComponent(W[0])}/${encodeURIComponent(W.slice(0, 2))}/${encodeURIComponent(W)}.jsonl`);
+    text = res.ok ? await res.text() : '';
+    writeFileSync(file, text);
+  }
+  const isName = text.split('\n').some(l => { if (!l.trim()) return false; try { const e = JSON.parse(l); return e.lang === 'English' && e.pos === 'name'; } catch { return false; } });
+  return isName && senseCount(word) <= 2;
+}
+
 // ---------- Construcción ----------
 const sameForm = (a, b) => Fono.check(a, { ipa: b, variants: [] }).correct;
 // /əl/ y /l̩/ finales son variantes que el EPD admite por igual: se comparan como iguales.
@@ -195,11 +227,20 @@ const NAMES_OK = new Set('january february march april may june july august sept
 const dedupe = forms => forms.reduce((acc, f) => (acc.some(g => sameForm(f, g)) ? acc : [...acc, f]), []);
 
 const freq = readFileSync(join(ROOT, 'tools/fuentes/frecuencia.txt'), 'utf8').split('\n').filter(Boolean);
+
+// Descarga previa en paralelo (6 a la vez) de las candidatas que aún no están en caché.
+{
+  const pending = freq.filter(w => !STOP.has(w) && britfone.has(w)).slice(0, Math.ceil(LIMIT * 1.35))
+    .filter(w => !existsSync(join(CACHE, 'lc_' + w + '.jsonl')));
+  let i = 0, done = 0;
+  const worker = async () => { while (i < pending.length) { const w = pending[i++]; try { await wiktionaryRP(w); } catch { /* se reintenta en la pasada principal */ } if (++done % 200 === 0) console.log(`  descargadas ${done}/${pending.length}…`); } };
+  if (pending.length) { console.log(`Descargando ${pending.length} entradas de Wiktionary…`); await Promise.all(Array.from({ length: 6 }, worker)); }
+}
 const out = [], conflicts = [];
 let checked = 0;
 for (const word of freq) {
   if (out.length >= LIMIT) break;
-  if (STOP.has(word) || !britfone.has(word)) continue;
+  if (STOP.has(word) || !britfone.has(word) || britishSpelling(word)) continue;
   const bForms = britfone.get(word);
   const pats = patternsFor(word, bForms[0]);
   if (!pats.length) continue;
@@ -207,6 +248,7 @@ for (const word of freq) {
   const wk = await wiktionaryRP(word);
   // Nombres propios (sin página en minúscula): fuera, salvo meses y días.
   if (wk.display !== word && !NAMES_OK.has(word)) continue;
+  if (!NAMES_OK.has(word) && await isProperNoun(word)) continue;
   const agreeing = [...wk.forms, ...wk.loose].filter(f => agrees(f, bForms));
   let estado, ipa, variants;
   if (agreeing.length) {
@@ -244,8 +286,11 @@ writeFileSync(join(ROOT, 'banco', 'candidatas.json'), JSON.stringify({
 
 const cam = w => `[EPD/Cambridge](https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(w.toLowerCase())})`;
 writeFileSync(join(ROOT, 'banco', 'discrepancias.md'),
-  `# Discrepancias para revisar\n\n${conflicts.length} palabras en las que Britfone y Wiktionary (RP) no coinciden según el corrector de FonoRP. ` +
+  `# Palabras para revisar\n\n${conflicts.length} palabras en las que Britfone y Wiktionary (RP) no coinciden según el corrector de FonoRP. ` +
   `Comprueba cada una en el EPD o el LPD y apunta la buena.\n\n| Palabra | Britfone | Wiktionary RP | Comprobar |\n|---|---|---|---|\n` +
-  conflicts.map(c => `| ${c.word} | ${c.britfone.map(f => `/${f}/`).join(' · ')} | ${c.wiktionary.map(f => `/${f}/`).join(' · ')} | ${cam(c.word)} |`).join('\n') + '\n');
+  conflicts.map(c => `| ${c.word} | ${c.britfone.map(f => `/${f}/`).join(' · ')} | ${c.wiktionary.map(f => `/${f}/`).join(' · ')} | ${cam(c.word)} |`).join('\n') + '\n' +
+  `\n## Solo Britfone\n\n${count('una-fuente')} palabras sin forma RP en Wiktionary. Están en el banco ampliado como «sin revisar»; ` +
+  `son las de más riesgo después de las discrepancias.\n\n| Palabra | Britfone | Comprobar |\n|---|---|---|\n` +
+  out.filter(w => w.estado === 'una-fuente').map(w => `| ${w.word} | /${w.ipa}/${w.variants.length ? ' · ' + w.variants.map(v => `/${v}/`).join(' · ') : ''} | ${cam(w.word)} |`).join('\n') + '\n');
 
 console.log(`\nRevisadas ${checked} candidatas → ${out.length} palabras: ${count('coinciden')} coinciden, ${count('discrepan')} discrepan, ${count('una-fuente')} solo Britfone.`);
