@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+# Material de trabajo de Impeccable (capturas y bocetos de decisión)
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/config.local.json

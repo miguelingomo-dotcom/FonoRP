@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T11:20:01+00:00",
+  "title": "Design System: FonoRP",
+  "extensions": {
+    "colorMeta": {
+      "stamp": {
+        "role": "primary",
+        "displayName": "Violeta de tampón",
+        "canonical": "oklch(43.2% 0.166 283.8)",
+        "dark": "#ab9ff2",
+        "tonalRamp": [
+          "#13004a",
+          "#24006d",
+          "#3d2994",
+          "#594dba",
+          "#7970e1",
+          "#9a94ff",
+          "#bdb8ff",
+          "#e1dfff"
+        ]
+      },
+      "stamp-hover": {
+        "role": "primary",
+        "displayName": "Violeta de tampón (hover)",
+        "canonical": "oklch(37.8% 0.149 283.5)",
+        "dark": "#c0b6f6",
+        "tonalRamp": [
+          "#110046",
+          "#230568",
+          "#3c2e8c",
+          "#5951b1",
+          "#7873d7",
+          "#9a97fe",
+          "#bdbbff",
+          "#e1e1ff"
+        ]
+      },
+      "stamp-ink": {
+        "role": "primary",
+        "displayName": "Tinta sobre violeta",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "dark": "#17122f",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "pen": {
+        "role": "secondary",
+        "displayName": "Rojo de corrector",
+        "canonical": "oklch(53.0% 0.184 31.2)",
+        "dark": "#ff7d61",
+        "tonalRamp": [
+          "#360000",
+          "#5c0000",
+          "#8a0000",
+          "#b21f0a",
+          "#da4a35",
+          "#ff7059",
+          "#ff967c",
+          "#ffc4ab"
+        ]
+      },
+      "warn": {
+        "role": "tertiary",
+        "displayName": "Ámbar de observación",
+        "canonical": "oklch(50.4% 0.106 70.4)",
+        "dark": "#e8b04b",
+        "tonalRamp": [
+          "#230000",
+          "#431600",
+          "#643500",
+          "#875501",
+          "#aa7632",
+          "#cf9957",
+          "#f5bd7a",
+          "#ffe39f"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Papel de oficio",
+        "canonical": "oklch(95.7% 0.006 255.5)",
+        "dark": "#111318",
+        "tonalRamp": [
+          "#090b0e",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a2a5a9",
+          "#c6c9cd",
+          "#eceff3"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Impreso",
+        "canonical": "oklch(99.1% 0.002 247.8)",
+        "dark": "#191c23",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#242526",
+          "#414243",
+          "#606162",
+          "#818283",
+          "#a4a5a6",
+          "#c8c9ca",
+          "#edeeef"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Gris de carpeta",
+        "canonical": "oklch(92.0% 0.014 258.3)",
+        "dark": "#252a35",
+        "tonalRamp": [
+          "#080b11",
+          "#21252c",
+          "#3e424a",
+          "#5c6269",
+          "#7d838b",
+          "#a0a5ae",
+          "#c4cad2",
+          "#e9eff8"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "canonical": "oklch(20.4% 0.011 260.7)",
+        "dark": "#e9edf3",
+        "tonalRamp": [
+          "#090b10",
+          "#22252b",
+          "#3f4248",
+          "#5e6168",
+          "#7f8389",
+          "#a1a5ac",
+          "#c5c9d0",
+          "#eaeff6"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Lápiz",
+        "canonical": "oklch(41.8% 0.020 259.4)",
+        "dark": "#b0b8c4",
+        "tonalRamp": [
+          "#060b14",
+          "#1f252f",
+          "#3c424d",
+          "#5a626d",
+          "#7b838f",
+          "#9ea6b2",
+          "#c1cad7",
+          "#e6effd"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Lápiz suave",
+        "canonical": "oklch(49.0% 0.022 258.4)",
+        "dark": "#98a1ae",
+        "tonalRamp": [
+          "#060b14",
+          "#1f2530",
+          "#3b434e",
+          "#5a626e",
+          "#7b8390",
+          "#9da6b3",
+          "#c1cad8",
+          "#e6effd"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Filete de tinta",
+        "canonical": "oklch(20.4% 0.011 260.7)",
+        "dark": "#aeb7c4",
+        "tonalRamp": [
+          "#090b10",
+          "#22252b",
+          "#3f4248",
+          "#5e6168",
+          "#7f8389",
+          "#a1a5ac",
+          "#c5c9d0",
+          "#eaeff6"
+        ]
+      },
+      "tray": {
+        "role": "neutral",
+        "displayName": "Bandeja de tinta",
+        "canonical": "oklch(20.4% 0.011 260.7)",
+        "dark": "#08090c",
+        "tonalRamp": [
+          "#090b10",
+          "#22252b",
+          "#3f4248",
+          "#5e6168",
+          "#7f8389",
+          "#a1a5ac",
+          "#c5c9d0",
+          "#eaeff6"
+        ]
+      },
+      "z-vowel": {
+        "role": "neutral",
+        "displayName": "Zona vocales",
+        "canonical": "oklch(90.7% 0.017 256.3)",
+        "dark": "#2e3a4d",
+        "tonalRamp": [
+          "#070b12",
+          "#20262e",
+          "#3c434b",
+          "#5b626b",
+          "#7c838d",
+          "#9ea6b0",
+          "#c2cad5",
+          "#e7effa"
+        ]
+      },
+      "z-diph": {
+        "role": "neutral",
+        "displayName": "Zona diptongos",
+        "canonical": "oklch(84.5% 0.064 293.0)",
+        "dark": "#3f3577",
+        "tonalRamp": [
+          "#0d0423",
+          "#271e41",
+          "#433b61",
+          "#625a83",
+          "#837ba6",
+          "#a69eca",
+          "#cac2f0",
+          "#efe7ff"
+        ]
+      },
+      "z-cons": {
+        "role": "neutral",
+        "displayName": "Zona consonantes",
+        "canonical": "oklch(97.6% 0.003 264.5)",
+        "dark": "#1a1d24",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#242526",
+          "#414243",
+          "#606163",
+          "#818284",
+          "#a4a5a7",
+          "#c8c9cb",
+          "#edeef0"
+        ]
+      },
+      "z-ink": {
+        "role": "neutral",
+        "displayName": "Tinta de tecla",
+        "canonical": "oklch(20.4% 0.011 260.7)",
+        "dark": "#e9edf3",
+        "tonalRamp": [
+          "#090b10",
+          "#22252b",
+          "#3f4248",
+          "#5e6168",
+          "#7f8389",
+          "#a1a5ac",
+          "#c5c9d0",
+          "#eaeff6"
+        ]
+      },
+      "z-ex": {
+        "role": "neutral",
+        "displayName": "Ejemplo de tecla",
+        "canonical": "oklch(39.5% 0.021 256.4)",
+        "dark": "#aab3bf",
+        "tonalRamp": [
+          "#060b14",
+          "#1e2630",
+          "#3b434e",
+          "#59626e",
+          "#7a838f",
+          "#9da6b3",
+          "#c0cad7",
+          "#e5effd"
+        ]
+      },
+      "z-extra-line": {
+        "role": "neutral",
+        "displayName": "Filete de extras",
+        "canonical": "oklch(66.1% 0.023 259.2)",
+        "dark": "#6b7482",
+        "tonalRamp": [
+          "#060b15",
+          "#1e2531",
+          "#3b424f",
+          "#59626f",
+          "#7a8391",
+          "#9ca6b4",
+          "#c0cad9",
+          "#e5efff"
+        ]
+      },
+      "z-extra-ink": {
+        "role": "neutral",
+        "displayName": "Tinta de extras",
+        "canonical": "oklch(95.7% 0.006 255.5)",
+        "dark": "#e9edf3",
+        "tonalRamp": [
+          "#090b0e",
+          "#232528",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a2a5a9",
+          "#c6c9cd",
+          "#eceff3"
+        ]
+      },
+      "z-mark": {
+        "role": "neutral",
+        "displayName": "Tecla de marca",
+        "canonical": "oklch(29.2% 0.018 262.2)",
+        "dark": "#171a21",
+        "tonalRamp": [
+          "#070b13",
+          "#20252e",
+          "#3d424c",
+          "#5c616c",
+          "#7d838d",
+          "#9fa5b1",
+          "#c3c9d5",
+          "#e8effb"
+        ]
+      },
+      "z-mark-ink": {
+        "role": "neutral",
+        "displayName": "Tinta de marca",
+        "canonical": "oklch(81.5% 0.087 291.7)",
+        "dark": "#ab9ff2",
+        "tonalRamp": [
+          "#0f002c",
+          "#271a4b",
+          "#43386c",
+          "#62588f",
+          "#8379b2",
+          "#a69bd8",
+          "#c9bffe",
+          "#efe5ff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Palabra",
+        "purpose": "La palabra del ejercicio en el campo Palabra; tamaño vía --word-size."
+      },
+      "headline": {
+        "displayName": "Título del acta",
+        "purpose": "Título del resumen de tanda."
+      },
+      "ipa-display": {
+        "displayName": "IPA grande",
+        "purpose": "Transcripción modelo y ejemplo de portada."
+      },
+      "ipa-casilla": {
+        "displayName": "IPA de casilla",
+        "purpose": "Un fonema por casilla en la respuesta."
+      },
+      "title": {
+        "displayName": "Botón",
+        "purpose": "Botones, veredicto y enlaces de acción."
+      },
+      "body": {
+        "displayName": "Texto",
+        "purpose": "Explicaciones, notas y subtítulos."
+      },
+      "label": {
+        "displayName": "Etiqueta de campo",
+        "purpose": "Nombre de cada campo del impreso, en minúscula de frase."
+      },
+      "stamp": {
+        "displayName": "Sello",
+        "purpose": "APTO / REVISAR y la puntuación del acta; único uso de mayúsculas espaciadas (subtítulo del sello)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tray-lift",
+        "value": "0 1px 2px rgb(20 23 40 / .06), 0 10px 28px rgb(20 23 40 / .07)",
+        "purpose": "Solo la bandeja fonémica en escritorio (>=900px). Oscuro: 0 1px 2px rgb(0 0 0 / .35), 0 10px 28px rgb(0 0 0 / .3)."
+      },
+      {
+        "name": "ink-rule",
+        "value": "inset 0 0 0 1.5px var(--rule)",
+        "purpose": "Filete de tinta de campos, casillas y controles; no es elevación."
+      },
+      {
+        "name": "review-ring",
+        "value": "inset 0 0 0 2.5px var(--stamp) | var(--pen)",
+        "purpose": "Teclas encendidas en la revisión: sonidos de la palabra (violeta) o fallados (rojo)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Curva por defecto: entradas de vista, escenario, corrección, pulsaciones."
+      },
+      {
+        "name": "ease-stamp",
+        "value": "cubic-bezier(0.2, 1.3, 0.4, 1)",
+        "purpose": "Única curva con rebote: el sello que cae (300ms)."
+      },
+      {
+        "name": "press",
+        "value": "140ms",
+        "purpose": "Pulsación de botones y chips (scale 0.97; teclas 0.93 en 110ms)."
+      },
+      {
+        "name": "token-in",
+        "value": "150ms",
+        "purpose": "Aparición de una casilla al escribir (5px de subida); la escritura apenas se anima."
+      },
+      {
+        "name": "strike",
+        "value": "220ms",
+        "purpose": "Tachado rojo de la casilla fallada, escalonado 30ms por columna."
+      },
+      {
+        "name": "view-in",
+        "value": "240-300ms",
+        "purpose": "Cambio de vista y bloques de corrección escalonados 60ms."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "fade 200ms",
+        "purpose": "Se conservan los fundidos; se quitan desplazamientos, escalas y tachados animados."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción única de la pantalla: Empezar, Comprobar, Siguiente, Repetir.",
+      "html": "<button class=\"ds-btn-primary\">Comprobar</button>",
+      "css": ".ds-btn-primary { font-family: var(--font-ui); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 20px; border: 0; border-radius: var(--r-ctl, 4px); background: var(--stamp); color: var(--stamp-ink); font-weight: 700; font-stretch: 88%; font-size: 17px; cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease; } .ds-btn-primary:hover { background: var(--stamp-hover); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }"
+    },
+    {
+      "name": "Botón secundario",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción alternativa con filete de tinta (Volver al inicio, Ver solución).",
+      "html": "<button class=\"ds-btn-secondary\">Volver al inicio</button>",
+      "css": ".ds-btn-secondary { font-family: var(--font-ui); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 20px; border: 0; border-radius: var(--r-ctl, 4px); background: transparent; color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); font-weight: 700; font-stretch: 88%; font-size: 17px; cursor: pointer; transition: transform 140ms var(--ease-out), background-color 160ms ease; } .ds-btn-secondary:hover { background: var(--surface-2); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }"
+    },
+    {
+      "name": "Chip de patrón",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Casilla de formulario que se marca con un aspa violeta.",
+      "html": "<button class=\"ds-chip\" role=\"checkbox\" aria-checked=\"true\"><span class=\"ds-chip-box\"></span>Schwa <span class=\"ds-chip-count\">34</span></button> <button class=\"ds-chip\" role=\"checkbox\" aria-checked=\"false\"><span class=\"ds-chip-box\"></span>Acento <span class=\"ds-chip-count\">29</span></button>",
+      "css": ".ds-chip { font-family: var(--font-ui); min-height: 44px; padding: 0 12px 0 10px; border: 0; border-radius: var(--r-ctl, 4px); display: inline-flex; align-items: center; gap: 8px; background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule-soft); font-size: 15px; font-weight: 500; cursor: pointer; transition: transform 140ms var(--ease-out), box-shadow 160ms ease; } .ds-chip[aria-checked=\"true\"] { box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); } .ds-chip:active { transform: scale(0.97); } .ds-chip:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; } .ds-chip-box { width: 16px; height: 16px; border: var(--line, 1.5px) solid var(--rule); border-radius: 2px; position: relative; } .ds-chip-box::before, .ds-chip-box::after { content: ''; position: absolute; left: 50%; top: 50%; width: 15px; height: 2px; border-radius: 1px; background: var(--stamp); transform: translate(-50%, -50%) rotate(45deg) scaleX(0); transition: transform 160ms var(--ease-out); } .ds-chip-box::after { transform: translate(-50%, -50%) rotate(-45deg) scaleX(0); transition-delay: 60ms; } .ds-chip[aria-checked=\"true\"] .ds-chip-box::before { transform: translate(-50%, -50%) rotate(45deg) scaleX(1); } .ds-chip[aria-checked=\"true\"] .ds-chip-box::after { transform: translate(-50%, -50%) rotate(-45deg) scaleX(1); } .ds-chip-count { font-size: 12.5px; color: var(--faint); font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Control segmentado",
+      "kind": "custom",
+      "refersTo": "segmented",
+      "description": "Modo, nivel y número de palabras; la opción elegida es un recuadro impreso con filete.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\"><button class=\"ds-seg-opt is-on\" role=\"radio\" aria-checked=\"true\">En la app</button><button class=\"ds-seg-opt\" role=\"radio\" aria-checked=\"false\">En papel</button></div>",
+      "css": ".ds-seg { font-family: var(--font-ui); display: inline-grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 3px; border-radius: var(--r-ctl, 4px); background: var(--surface-2); } .ds-seg-opt { font: inherit; min-height: 38px; padding: 0 14px; border: 0; border-radius: 3px; background: transparent; font-size: 15px; font-weight: 600; color: var(--muted); cursor: pointer; transition: color 200ms ease, background-color 240ms var(--ease-out); } .ds-seg-opt.is-on { background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); } .ds-seg-opt:hover { color: var(--ink); } .ds-seg-opt:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }"
+    },
+    {
+      "name": "Campo con etiqueta",
+      "kind": "card",
+      "refersTo": "field",
+      "description": "Contenedor base del impreso: etiqueta de campo pequeña y filete de tinta.",
+      "html": "<div class=\"ds-field\"><div class=\"ds-label\">Transcripción RP</div><div class=\"ds-ipa\"><span class=\"ds-slash\">/</span><b>ˈ</b>stʌm.ək<span class=\"ds-slash\">/</span></div></div>",
+      "css": ".ds-field { font-family: var(--font-ui); background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); border-radius: var(--r-box, 3px); padding: 8px 12px 12px; display: grid; gap: 2px; } .ds-label { font-size: 12.5px; font-weight: 600; font-stretch: 80%; color: var(--muted); letter-spacing: .01em; line-height: 1.2; } .ds-ipa { font-family: var(--font-ipa); font-size: 40px; line-height: 1.2; } .ds-ipa b { font-weight: 800; color: var(--stamp); } .ds-slash { color: var(--stamp); font-weight: 300; }"
+    },
+    {
+      "name": "Casillas de transcripción",
+      "kind": "input",
+      "refersTo": "casilla",
+      "description": "Un fonema por casilla; marca de acento en casilla discontinua violeta; fallo en rojo con tachado.",
+      "html": "<div class=\"ds-tokens\"><span class=\"ds-tok ds-mark\">ˈ</span><span class=\"ds-tok\">f</span><span class=\"ds-tok\">e</span><span class=\"ds-tok ds-bad\">æ</span><span class=\"ds-tok ds-gap\"></span><span class=\"ds-caret\"></span></div>",
+      "css": ".ds-tokens { display: flex; gap: 4px; font-family: var(--font-ipa); font-size: 26px; line-height: 1; color: var(--ink); } .ds-tok { min-width: 34px; height: 48px; padding: 0 5px; display: inline-flex; align-items: center; justify-content: center; background: var(--surface); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); border-radius: 2px; position: relative; } .ds-mark { min-width: 18px; padding: 0 2px; color: var(--stamp); font-weight: 800; background: transparent; box-shadow: none; border: var(--line, 1.5px) dashed var(--stamp); } .ds-bad { color: var(--pen); background: var(--pen-soft); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--pen); } .ds-bad::after { content: ''; position: absolute; left: 4px; right: 4px; top: 50%; height: 2.5px; border-radius: 2px; background: currentColor; transform: rotate(-14deg); } .ds-gap { background: transparent; box-shadow: none; border: var(--line, 1.5px) dashed var(--pen); } .ds-caret { width: 34px; height: 48px; border-radius: 2px; position: relative; box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule-soft); } .ds-caret::after { content: ''; position: absolute; left: 50%; top: 11px; bottom: 11px; width: 2px; margin-left: -1px; background: var(--stamp); animation: ds-blink 1.05s steps(1) infinite; } @keyframes ds-blink { 50% { opacity: 0; } }"
+    },
+    {
+      "name": "Sello del tribunal",
+      "kind": "custom",
+      "refersTo": "stamp-apto",
+      "description": "Firma del sistema: cae sobre la respuesta al comprobar. APTO en violeta, REVISAR en rojo.",
+      "html": "<div class=\"ds-stamps\"><div class=\"ds-stamp\"><span class=\"ds-stamp-main\">APTO</span><span class=\"ds-stamp-sub\">Tribunal FonoRP</span></div><div class=\"ds-stamp is-bad\"><span class=\"ds-stamp-main\">REVISAR</span><span class=\"ds-stamp-sub\">Tribunal FonoRP</span></div></div>",
+      "css": ".ds-stamps { display: flex; gap: 32px; padding: 24px; font-family: var(--font-ui); } .ds-stamp { --c: var(--stamp); display: grid; justify-items: center; padding: 3px 9px 4px; color: var(--c); border: 3px solid var(--c); border-radius: 6px; background: color-mix(in srgb, var(--bg) 72%, transparent); transform: rotate(-7deg); opacity: .94; animation: ds-stamp-down 300ms var(--ease-stamp) both; } .ds-stamp.is-bad { --c: var(--pen); } .ds-stamp-main { font-weight: 900; font-stretch: 72%; font-size: 18px; line-height: 1; letter-spacing: .04em; } .ds-stamp-sub { font-size: 11px; font-weight: 700; font-stretch: 80%; letter-spacing: .08em; text-transform: uppercase; } @keyframes ds-stamp-down { 0% { opacity: 0; transform: rotate(-12deg) scale(1.6); } 60% { opacity: .96; } 100% { opacity: .94; transform: rotate(-7deg) scale(1); } } @media (prefers-reduced-motion: reduce) { .ds-stamp { animation: ds-fade 200ms both; } @keyframes ds-fade { from { opacity: 0; } } }"
+    },
+    {
+      "name": "Bandeja fonémica",
+      "kind": "custom",
+      "refersTo": "key-vowel",
+      "description": "Tabla de Underhill sobre bandeja de tinta con zonas de color plano; extras discontinuas.",
+      "html": "<div class=\"ds-tray\"><button class=\"ds-key ds-v\"><span class=\"ds-sym\">ə</span><span class=\"ds-ex\">about</span></button><button class=\"ds-key ds-d\"><span class=\"ds-sym\">eɪ</span><span class=\"ds-ex\">day</span></button><button class=\"ds-key ds-x\"><span class=\"ds-sym\">i</span><span class=\"ds-ex\">happy</span></button><button class=\"ds-key\"><span class=\"ds-sym\">θ</span><span class=\"ds-ex\">thin</span></button><button class=\"ds-key ds-m\"><span class=\"ds-sym\">ˈ</span><span class=\"ds-ex\">tónica</span></button></div>",
+      "css": ".ds-tray { display: grid; grid-template-columns: repeat(5, 64px); gap: 4px; padding: 8px; background: var(--tray); font-family: var(--font-ui); } .ds-key { min-height: 48px; border: 0; border-radius: 3px; background: var(--z-cons); color: var(--z-ink); display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; transition: transform 110ms var(--ease-out); } .ds-key:active { transform: scale(0.93); } .ds-key:hover { filter: brightness(1.06); } .ds-key:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; } .ds-v { background: var(--z-vowel); } .ds-d { background: var(--z-diph); } .ds-x { background: transparent; color: var(--z-extra-ink); border: var(--line, 1.5px) dashed var(--z-extra-line); } .ds-m { background: var(--z-mark); color: var(--z-mark-ink); } .ds-sym { font-family: var(--font-ipa); font-size: 19px; line-height: 1.15; } .ds-ex { font-size: 11px; font-stretch: 85%; line-height: 1.1; color: var(--z-ex); } .ds-x .ds-ex, .ds-m .ds-ex { color: var(--z-mark-ex); }"
+    },
+    {
+      "name": "Cabecera de formulario",
+      "kind": "nav",
+      "refersTo": "field",
+      "description": "Tira de celdas Ejercicio / Nivel / Patrón con casillas de progreso.",
+      "html": "<div class=\"ds-head\"><div class=\"ds-cell\"><span class=\"ds-l\">Ejercicio</span><span class=\"ds-v\">02/05</span><ol class=\"ds-prog\"><li class=\"bad\"></li><li class=\"cur\"></li><li></li><li></li><li></li></ol></div><div class=\"ds-cell\"><span class=\"ds-l\">Nivel</span><span class=\"ds-v\">2</span></div><div class=\"ds-cell\"><span class=\"ds-l\">Patrón</span><span class=\"ds-v\">La r de RP</span></div></div>",
+      "css": ".ds-head { font-family: var(--font-ui); display: grid; grid-template-columns: auto auto minmax(0, 1fr); background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 var(--line, 1.5px) var(--rule); border-radius: var(--r-box, 3px); } .ds-cell { padding: 5px 9px 6px; display: grid; gap: 1px; } .ds-cell + .ds-cell { box-shadow: inset var(--line, 1.5px) 0 0 var(--rule); } .ds-l { font-size: 12.5px; font-weight: 600; font-stretch: 80%; color: var(--muted); } .ds-v { font-size: 15px; font-weight: 700; font-stretch: 85%; font-variant-numeric: tabular-nums; } .ds-prog { list-style: none; margin: 3px 0 0; padding: 0; display: flex; gap: 3px; } .ds-prog li { width: 8px; height: 8px; border: 1.5px solid var(--rule); border-radius: 1px; } .ds-prog li.cur { border-color: var(--stamp); background: var(--stamp-soft); } .ds-prog li.bad { background: var(--pen); border-color: var(--pen); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Acta del tribunal",
+    "overview": "FonoRP es la papelería de una oposición de Secundaria: papel de oficio frío, filetes de tinta de 1.5px, campos con su etiqueta pequeña y casillas donde se escribe un fonema en cada una. Cada palabra es un ejercicio del examen y cada corrección es el sello del tribunal: el violeta de tampón aprueba (APTO) y el rojo del boli del corrector señala lo que hay que revisar (REVISAR), casilla por casilla, con un número que remite a la explicación.\n\nLa densidad es la de un impreso: todo en recuadros con nombre (Ejercicio, Nivel, Patrón, Palabra, Transcripción, Transcripción RP, Nota), sin tarjetas flotantes ni decoración. La tabla fonémica es la excepción material: una bandeja de tinta oscura bajo el formulario con la disposición de Underhill y zonas de color plano. El estado se comunica por forma además de por color (tachado, hueco discontinuo, peso del acento), para que el fallo se lea también en monocromo.\n\nRechazo confirmado: la tarjeta blanca de flashcard con avisos verdes y rojos. No hay verde en ningún sitio.",
+    "keyCharacteristics": [
+      "Filetes de tinta de 1.5px dibujados como `inset box-shadow`, no como sombras.",
+      "Dos tintas de estado y nada más: violeta de tampón (bien, marca) y rojo de corrector (error); ámbar solo para el aviso del acento secundario.",
+      "Archivo condensada para la palabra, las etiquetas de campo y el sello; Noto Sans recortada a IPA para todo símbolo fonético.",
+      "Esquinas casi rectas en escala estricta; nada en píldora.",
+      "Un único gesto con rebote: el sello que cae al comprobar."
+    ],
+    "rules": [
+      {
+        "name": "The Two Inks Rule",
+        "body": "Violeta = correcto y marca; rojo = error. Ningún otro color comunica acierto o fallo, y el verde no existe en este sistema. Una palabra acertada se marca en el progreso con tinta (`ink`), no con un tercer color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Amber Exception Rule",
+        "body": "El ámbar solo aparece para la observación del acento secundario; si un estado nuevo lo necesita, primero hay que justificar por qué no es violeta ni rojo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Field Label Rule",
+        "body": "Toda información del formulario lleva su etiqueta de campo pequeña y condensada, en minúscula de frase. Las mayúsculas espaciadas son exclusivas del grabado del sello.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stress Weight Rule",
+        "body": "El acento primario `ˈ` se distingue del secundario `ˌ` por peso (800), nunca duplicando el trazo: un trazo doble se lee como comilla recta.",
+        "section": "typography"
+      },
+      {
+        "name": "The IPA Face Rule",
+        "body": "Todo símbolo fonético, incluidas las barras `/ /` (300, violeta), va en la familia IPA; nunca en Archivo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ink Not Shadow Rule",
+        "body": "Un campo se delimita con un filete de tinta, nunca con una sombra difusa. La única sombra del sistema es la de la bandeja en escritorio.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** usar el logo siempre desde los SVG de `marca/` (sello `/ˈ/` girado −6° y logotipo en Archivo `wdth` 72 / `wght` 820 convertido a trazos); en oscuro, `fonorp-logo-oscuro.svg`.",
+      "**Do** delimitar cada bloque de información como un campo con etiqueta pequeña condensada y filete de tinta de 1.5px.",
+      "**Do** comunicar cada estado por forma además de por color: tachado, hueco discontinuo, número de error, peso del acento.",
+      "**Do** reservar `cubic-bezier(0.2, 1.3, 0.4, 1)` para el sello; el resto del movimiento usa `cubic-bezier(0.23, 1, 0.32, 1)` entre 140 y 300ms.",
+      "**Do** mantener en movimiento reducido los fundidos (200ms) y quitar todo desplazamiento, escala y tachado animado.",
+      "**Do** declarar cada color nuevo en `:root` con su pareja en el bloque oscuro."
+    ],
+    "donts": [
+      "**Don't** redibujar el logo ni imitarlo con texto en una fuente.",
+      "**Don't** usar verde, ni ningún tercer color de acierto o error.",
+      "**Don't** usar el ámbar para nada que no sea la observación del acento secundario.",
+      "**Don't** marcar el acento primario duplicando el trazo; se distingue por peso 800.",
+      "**Don't** redondear en píldora ni salirse de la escala 2/3/4/6px.",
+      "**Don't** usar sombras difusas en campos o casillas; solo la bandeja de escritorio lleva sombra.",
+      "**Don't** añadir otra curva con rebote ni animar la escritura más allá de la aparición de la casilla.",
+      "**Don't** escribir símbolos IPA en Archivo ni dibujar iconos a mano; los iconos son Phosphor (regular) incrustados como SVG."
+    ]
+  }
+}

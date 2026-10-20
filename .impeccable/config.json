@@ -1,0 +1,50 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(0.2, 1.3, 0.4, 1)",
+        "createdAt": "2026-10-20T11:06:45.897Z",
+        "reason": "model decision: literal rubber-stamp impact, the signature move in the direction contract (.impeccable/surfaces/index-html.md); used only on .stamp"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-10-20T11:07:19.197Z",
+        "reason": "model decision: throwaway decision-round sketch, not shipped"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-20T11:07:19.214Z",
+        "reason": "model decision: throwaway decision-round sketch, not shipped"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-10-20T11:07:19.227Z",
+        "reason": "model decision: throwaway decision-round sketch, not shipped"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-10-20T11:20:49.130Z",
+        "reason": "model decision: unchosen decision-round sketch (Cuaderno direction), not shipped"
+      }
+    ]
+  }
+}

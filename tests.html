@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FonoRP · Tests</title>
+<style>
+  :root { color-scheme: light dark; --ok: #1f8a4c; --ko: #c62828; --muted: #888; }
+  body { font: 15px/1.45 -apple-system, system-ui, sans-serif; margin: 0 auto; max-width: 860px; padding: 16px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  #summary { font-weight: 600; margin-bottom: 16px; }
+  .pass { color: var(--ok); } .fail { color: var(--ko); }
+  details { border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent); padding: 8px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  li { margin: 2px 0; font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+  li small { display: block; color: var(--muted); white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>FonoRP · Tests del corrector</h1>
+<div id="summary">Ejecutando…</div>
+<div id="out"></div>
+<script src="fono.js"></script>
+<script src="tests.js"></script>
+<script>
+(async () => {
+  const summary = document.getElementById('summary');
+  let data;
+  try { data = await (await fetch('words.json', { cache: 'no-store' })).json(); }
+  catch (e) {
+    summary.innerHTML = '<span class="fail">No se pudo cargar words.json. Abre la página con un servidor local: <code>python3 -m http.server</code></span>';
+    return;
+  }
+  const res = runTests(Fono, data);
+  const fails = res.filter(r => !r.ok).length;
+  summary.innerHTML = `<span class="${fails ? 'fail' : 'pass'}">${res.length - fails}/${res.length} OK</span>`;
+  const groups = {};
+  for (const r of res) (groups[r.group] ||= []).push(r);
+  const esc = s => s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+  document.getElementById('out').innerHTML = Object.entries(groups).map(([g, rs]) => {
+    const bad = rs.filter(r => !r.ok).length;
+    return `<details ${bad ? 'open' : ''}><summary class="${bad ? 'fail' : 'pass'}">${esc(g)} — ${rs.length - bad}/${rs.length}</summary><ul>` +
+      rs.map(r => `<li class="${r.ok ? 'pass' : 'fail'}">${r.ok ? '✓' : '✗'} ${esc(r.name)}${r.ok ? '' : `<small>${esc(r.detail)}</small>`}</li>`).join('') +
+      '</ul></details>';
+  }).join('');
+})();
+</script>
+</body>
+</html>
