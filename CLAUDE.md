@@ -65,6 +65,7 @@ Cada botón muestra el símbolo y una palabra de ejemplo pequeña debajo (see, s
 - Formas: casillas y campos 3px, controles 4px, sello 6px; filetes de tinta de 1.5px. Nada en píldora.
 - Tabla fonémica = tabla de Underhill sobre una bandeja de tinta con zonas de color plano (vocales, diptongos, consonantes, extras discontinuas). En la corrección resalta los sonidos de la palabra (violeta) y los fallados (rojo).
 - Iconos: Phosphor (regular), SVG oficiales incrustados en `index.html`. No dibujar iconos a mano.
+- Apariencia: selector Auto / Claro / Oscuro al final del inicio (`fonorp.theme` en localStorage; `data-theme` en `<html>`, aplicado por un script en `<head>` antes de pintar).
 - Movimiento de firma: el sello que cae al comprobar. Escribir apenas se anima. `prefers-reduced-motion` conserva los fundidos y quita los desplazamientos.
 
 Mostrar la solución en grande, la respuesta del usuario con los fallos coloreados, la tabla de fonemas con los sonidos de la palabra resaltados y la `note`.

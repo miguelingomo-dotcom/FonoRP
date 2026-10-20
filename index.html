@@ -15,6 +15,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="preload" href="fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/noto-sans-ipa-wght.woff2" as="font" type="font/woff2" crossorigin>
+<script>/* Tema elegido por el usuario, antes de pintar (evita el parpadeo) */try{var t=localStorage.getItem('fonorp.theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body data-view="home">
@@ -89,6 +90,11 @@
         <legend class="field-label">Patrón</legend>
         <div class="chips" id="pattern-chips" role="radiogroup" aria-label="Patrón"></div>
         <p class="pattern-desc" id="pattern-desc"></p>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend class="field-label">Apariencia</legend>
+        <div class="segmented" id="theme-seg" role="radiogroup" aria-label="Apariencia"></div>
       </fieldset>
 
       <button class="btn-primary btn-start" type="submit" id="start-btn">

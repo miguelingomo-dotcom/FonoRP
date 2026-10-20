@@ -73,8 +73,9 @@
   --safe-b: env(safe-area-inset-bottom, 0px);
 }
 
+/* Modo oscuro: sigue al sistema salvo que el usuario fuerce un tema (data-theme en <html>). */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #111318;
     --surface: #191c23;
     --surface-2: #252a35;
@@ -105,6 +106,38 @@
     --shadow: 0 1px 2px rgb(0 0 0 / .35), 0 10px 28px rgb(0 0 0 / .3);
   }
 }
+:root[data-theme="dark"] {
+  --bg: #111318;
+  --surface: #191c23;
+  --surface-2: #252a35;
+  --ink: #e9edf3;
+  --muted: #b0b8c4;
+  --faint: #98a1ae;
+  --rule: #aeb7c4;
+  --rule-soft: rgb(233 237 243 / .14);
+  --stamp: #ab9ff2;
+  --stamp-ink: #17122f;
+  --stamp-soft: rgb(171 159 242 / .15);
+  --stamp-hover: #c0b6f6;
+  --pen: #ff7d61;
+  --pen-soft: rgb(255 125 97 / .13);
+  --warn: #e8b04b;
+  --warn-soft: rgb(232 176 75 / .14);
+  --tray: #08090c;
+  --z-vowel: #2e3a4d;
+  --z-diph: #3f3577;
+  --z-cons: #1a1d24;
+  --z-ink: #e9edf3;
+  --z-ex: #aab3bf;
+  --z-extra-line: #6b7482;
+  --z-extra-ink: #e9edf3;
+  --z-mark: #171a21;
+  --z-mark-ink: #ab9ff2;
+  --z-mark-ex: #a3abb7;
+  --shadow: 0 1px 2px rgb(0 0 0 / .35), 0 10px 28px rgb(0 0 0 / .3);
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; caret-color: var(--stamp); scrollbar-color: var(--rule-soft) transparent; }

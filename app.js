@@ -17,6 +17,21 @@
   const LEVELS = [['all', 'Todos'], ['1', '1'], ['2', '2'], ['3', '3']];
   const SIZES = [['5', '5'], ['10', '10']];
   const MODES = [['app', 'En la app'], ['paper', 'En papel']];
+  const THEMES = [['auto', 'Auto'], ['light', 'Claro'], ['dark', 'Oscuro']];
+  const THEME_KEY = 'fonorp.theme';
+  const THEME_BG = { light: '#eef1f5', dark: '#111318' };
+
+  // Auto sigue al sistema; Claro/Oscuro lo fuerzan (data-theme en <html>, que lee styles.css).
+  function applyTheme(t) {
+    const root = document.documentElement;
+    if (t === 'light' || t === 'dark') root.dataset.theme = t; else delete root.dataset.theme;
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => {
+      if (!m.dataset.auto) m.dataset.auto = m.content;
+      m.content = t === 'light' || t === 'dark' ? THEME_BG[t] : m.dataset.auto;
+    });
+    try { if (t === 'light' || t === 'dark') localStorage.setItem(THEME_KEY, t); else localStorage.removeItem(THEME_KEY); } catch { /* sin almacenamiento */ }
+  }
+  const currentTheme = () => { try { return localStorage.getItem(THEME_KEY) || 'auto'; } catch { return 'auto'; } };
 
   const state = {
     data: null,
@@ -138,6 +153,8 @@
       state.settings.pattern = b.dataset.v; saveSettings(); updateStart();
     });
     buildSegmented($('mode-seg'), MODES, state.settings.mode, v => { state.settings.mode = v; saveSettings(); });
+    applyTheme(currentTheme());
+    buildSegmented($('theme-seg'), THEMES, currentTheme(), v => applyTheme(v));
     buildSegmented($('level-seg'), LEVELS, state.settings.level, v => { state.settings.level = v; saveSettings(); updateStart(); });
     buildSegmented($('size-seg'), SIZES, state.settings.size, v => { state.settings.size = v; saveSettings(); updateStart(); });
     $('setup').addEventListener('submit', e => {
@@ -183,7 +200,7 @@
   function go(view) {
     document.body.dataset.view = view;
     if (view === 'stats') renderStats();
-    if (view === 'home') { specimen.start(); requestAnimationFrame(() => ['mode-seg', 'bank-seg', 'level-seg', 'size-seg'].forEach(id => $(id)._place && $(id)._place())); }
+    if (view === 'home') { specimen.start(); requestAnimationFrame(() => ['mode-seg', 'bank-seg', 'level-seg', 'size-seg', 'theme-seg'].forEach(id => $(id)._place && $(id)._place())); }
     else specimen.clear();
     window.scrollTo(0, 0);
   }
