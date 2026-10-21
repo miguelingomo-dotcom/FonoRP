@@ -1,7 +1,7 @@
 /* FonoRP · service worker
    Precarga todo lo necesario para usar la app sin conexión.
    Al publicar cambios, sube VERSION para que los usuarios reciban la nueva versión. */
-const VERSION = 'fonorp-v6';
+const VERSION = 'fonorp-v7';
 const SHELL = [
   './',
   'index.html',

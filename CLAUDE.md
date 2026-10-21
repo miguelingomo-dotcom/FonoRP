@@ -13,7 +13,7 @@ Público: opositores de Secundaria Inglés, estudiantes de Estudios Ingleses y d
 - v1 sin cuentas: el progreso se guarda en `localStorage` (con try/catch). Firebase (plan gratuito) queda para una v2 con cuentas y sincronización.
 
 ## Datos: `words.json`
-2123 palabras: las 123 primeras, revisadas a mano y con nota; las otras 2000, del banco ampliado cotejado con Cambridge (sin nota, patrones y nivel heurísticos), añadidas el 2026-10-21. Cada entrada:
+2121 palabras: las 123 primeras, revisadas a mano y con nota; las otras 1998 (sin bullshit ni sucks; neighbourhood con grafía británica), del banco ampliado cotejado con Cambridge (notas breves escritas el 2026-10-21; patrones y nivel heurísticos), añadidas el 2026-10-21. Cada entrada:
 ```json
 {"word": "economic", "ipa": "ˌiː.kəˈnɒm.ɪk", "variants": ["ˌek.əˈnɒm.ɪk"],
  "patterns": ["acento", "schwa"], "level": 2, "note": "...", "error": "eˈkɒ.nɒ.mɪk"}
