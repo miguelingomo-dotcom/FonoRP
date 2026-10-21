@@ -719,12 +719,8 @@
       document.querySelector('.home-sub').textContent = 'No se pudieron cargar las palabras. Recarga la página.';
       return;
     }
-    // Banco ampliado: opcional. Si no carga, la app sigue con el revisado.
-    try {
-      const known = new Set(state.data.words.map(w => w.word.toLowerCase()));
-      const cand = await (await fetch('banco/candidatas.json')).json();
-      state.extra = cand.words.filter(w => w.estado !== 'discrepan' && !known.has(w.word.toLowerCase()));
-    } catch { state.extra = []; }
+    // El banco ampliado ya está revisado e incluido en words.json (2026-10-21): no se carga aparte,
+    // así que state.extra queda vacío y el selector de banco no se muestra.
     buildHome();
     buildKeyboard();
     if (speech.ok) { speech.pick(); speechSynthesis.addEventListener?.('voiceschanged', () => speech.pick()); }

@@ -1,7 +1,7 @@
 /* FonoRP · service worker
    Precarga todo lo necesario para usar la app sin conexión.
    Al publicar cambios, sube VERSION para que los usuarios reciban la nueva versión. */
-const VERSION = 'fonorp-v9';
+const VERSION = 'fonorp-v10';
 const SHELL = [
   './',
   'index.html',
@@ -9,7 +9,6 @@ const SHELL = [
   'app.js',
   'fono.js',
   'words.json',
-  'banco/candidatas.json',
   'manifest.webmanifest',
   'favicon.svg',
   'icons/apple-touch-icon.png',
