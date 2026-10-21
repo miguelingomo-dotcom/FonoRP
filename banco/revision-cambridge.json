@@ -1,0 +1,1975 @@
+{
+ "storage": {
+  "antes": {
+   "ipa": "ˈstɒrɪdʒ",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈstɔː.rɪdʒ",
+   "variants": []
+  },
+  "motivo": "error: la vocal es /ɔː/, no /ɒ/",
+  "tipo": "manual"
+ },
+ "sample": {
+  "antes": {
+   "ipa": "ˈsæmpəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈsɑːm.pəl",
+   "variants": []
+  },
+  "motivo": "error: /æ/ es norteña o americana; en RP es /ɑː/",
+  "tipo": "manual"
+ },
+ "infrastructure": {
+  "antes": {
+   "ipa": "ˌɪnfrəˈstrʌktʃə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈɪn.frəˌstrʌk.tʃə",
+   "variants": []
+  },
+  "motivo": "error de acento: el primario va en la primera sílaba",
+  "tipo": "manual"
+ },
+ "supreme": {
+  "antes": {
+   "ipa": "ˌsəˈpriːm",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "suːˈpriːm",
+   "variants": [
+    "sjuːˈpriːm",
+    "sʊˈpriːm"
+   ]
+  },
+  "motivo": "error: marca de acento sobre una schwa",
+  "tipo": "manual"
+ },
+ "spiritual": {
+  "antes": {
+   "ipa": "ˈspɪrɪtʃjuəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈspɪr.ɪ.tʃu.əl",
+   "variants": [
+    "ˈspɪr.ɪ.tju.əl"
+   ]
+  },
+  "motivo": "error: secuencia /tʃj/ imposible",
+  "tipo": "manual"
+ },
+ "easier": {
+  "antes": {
+   "ipa": "ˈiːziːə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈiː.zi.ə",
+   "variants": []
+  },
+  "motivo": "error: la i débil de happy, no /iː/",
+  "tipo": "manual"
+ },
+ "located": {
+  "antes": {
+   "ipa": "ˈləʊˌkeɪtɪd",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ləʊˈkeɪ.tɪd",
+   "variants": [
+    "ˈləʊˌkeɪtɪd"
+   ]
+  },
+  "motivo": "acento británico en la segunda; el de la primera es americano",
+  "tipo": "manual"
+ },
+ "somewhat": {
+  "antes": {
+   "ipa": "ˌsʌmˈwɒt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈsʌm.wɒt",
+   "variants": [
+    "ˌsʌmˈwɒt"
+   ]
+  },
+  "motivo": "el EPD y Cambridge acentúan la primera",
+  "tipo": "manual"
+ },
+ "alongside": {
+  "antes": {
+   "ipa": "əˈlɒŋˌsaɪd",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "əˌlɒŋˈsaɪd",
+   "variants": [
+    "əˈlɒŋˌsaɪd"
+   ]
+  },
+  "motivo": "el primario va en side",
+  "tipo": "manual"
+ },
+ "magazine": {
+  "antes": {
+   "ipa": "ˈmæɡəˌziːn",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌmæɡ.əˈziːn",
+   "variants": [
+    "ˈmæɡ.ə.ziːn"
+   ]
+  },
+  "motivo": "en RP el primario va en la última",
+  "tipo": "manual"
+ },
+ "understood": {
+  "antes": {
+   "ipa": "ʌndəˈstʊd",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌʌn.dəˈstʊd",
+   "variants": []
+  },
+  "motivo": "faltaba el acento secundario",
+  "tipo": "manual"
+ },
+ "individual": {
+  "antes": {
+   "ipa": "ɪndɪˈvɪdjuəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌɪn.dɪˈvɪdʒ.u.əl",
+   "variants": [
+    "ˌɪn.dɪˈvɪd.ju.əl"
+   ]
+  },
+  "motivo": "faltaba el secundario; se añade /dʒ/",
+  "tipo": "manual"
+ },
+ "individuals": {
+  "antes": {
+   "ipa": "ˌɪndɪˈvɪdjuəlz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌɪn.dɪˈvɪdʒ.u.əlz",
+   "variants": [
+    "ˌɪn.dɪˈvɪd.ju.əlz"
+   ]
+  },
+  "motivo": "se añade /dʒ/ y /u/ débil",
+  "tipo": "manual"
+ },
+ "species": {
+  "antes": {
+   "ipa": "ˈspiːʃiz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈspiː.ʃiːz",
+   "variants": [
+    "ˈspiːʃiz",
+    "ˈspiː.siːz"
+   ]
+  },
+  "motivo": "Cambridge y EPD dan /iːz/",
+  "tipo": "manual"
+ },
+ "employee": {
+  "antes": {
+   "ipa": "emˈplɔɪi",
+   "variants": [
+    "ɪmˈplɔɪi"
+   ]
+  },
+  "despues": {
+   "ipa": "ɪmˈplɔɪ.iː",
+   "variants": [
+    "emˈplɔɪi",
+    "ɪmˈplɔɪi",
+    "ˌem.plɔɪˈiː"
+   ]
+  },
+  "motivo": "la vocal final es larga /iː/",
+  "tipo": "manual"
+ },
+ "employees": {
+  "antes": {
+   "ipa": "emˈplɔɪiz",
+   "variants": [
+    "ɪmˈplɔɪiz"
+   ]
+  },
+  "despues": {
+   "ipa": "ɪmˈplɔɪ.iːz",
+   "variants": [
+    "emˈplɔɪiz",
+    "ɪmˈplɔɪiz",
+    "ˌem.plɔɪˈiːz"
+   ]
+  },
+  "motivo": "la vocal final es larga /iː/",
+  "tipo": "manual"
+ },
+ "created": {
+  "antes": {
+   "ipa": "kriːˈeɪt.ɪd",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kriˈeɪ.tɪd",
+   "variants": [
+    "kriːˈeɪt.ɪd"
+   ]
+  },
+  "motivo": "cre- con /i/ débil (convención EPD)",
+  "tipo": "manual"
+ },
+ "creating": {
+  "antes": {
+   "ipa": "kriːˈeɪtɪŋ",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kriˈeɪ.tɪŋ",
+   "variants": [
+    "kriːˈeɪtɪŋ"
+   ]
+  },
+  "motivo": "cre- con /i/ débil",
+  "tipo": "manual"
+ },
+ "creative": {
+  "antes": {
+   "ipa": "kriːˈeɪtɪv",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kriˈeɪ.tɪv",
+   "variants": [
+    "kriːˈeɪtɪv"
+   ]
+  },
+  "motivo": "cre- con /i/ débil",
+  "tipo": "manual"
+ },
+ "creation": {
+  "antes": {
+   "ipa": "kriːˈeɪʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kriˈeɪ.ʃən",
+   "variants": [
+    "kriːˈeɪʃən"
+   ]
+  },
+  "motivo": "cre- con /i/ débil",
+  "tipo": "manual"
+ },
+ "junior": {
+  "antes": {
+   "ipa": "ˈdʒuːnjə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈdʒuː.ni.ə",
+   "variants": [
+    "ˈdʒuːnjə"
+   ]
+  },
+  "motivo": "EPD y Cambridge dan /ni.ə/; /njə/ queda como variante",
+  "tipo": "manual"
+ },
+ "senior": {
+  "antes": {
+   "ipa": "ˈsiːnjə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈsiː.ni.ə",
+   "variants": [
+    "ˈsiːnjə"
+   ]
+  },
+  "motivo": "EPD y Cambridge dan /ni.ə/; /njə/ queda como variante",
+  "tipo": "manual"
+ },
+ "entitled": {
+  "antes": {
+   "ipa": "enˈtaɪtəld",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪnˈtaɪ.təld",
+   "variants": [
+    "enˈtaɪtəld"
+   ]
+  },
+  "motivo": "prefijo en- con /ɪ/",
+  "tipo": "manual"
+ },
+ "transportation": {
+  "antes": {
+   "ipa": "ˌtrænspəˈteɪʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌtræn.spɔːˈteɪ.ʃən",
+   "variants": [
+    "ˌtrænspəˈteɪʃən"
+   ]
+  },
+  "motivo": "EPD y Cambridge dan /spɔː/",
+  "tipo": "manual"
+ },
+ "data": {
+  "antes": {
+   "ipa": "ˈdɑːtə",
+   "variants": [
+    "ˈdeɪtə"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈdeɪ.tə",
+   "variants": [
+    "ˈdɑːtə"
+   ]
+  },
+  "motivo": "en RP la forma habitual es /ˈdeɪtə/",
+  "tipo": "manual"
+ },
+ "won": {
+  "antes": {
+   "ipa": "ˈwɒn",
+   "variants": [
+    "ˈwʌn"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈwʌn",
+   "variants": []
+  },
+  "motivo": "error: past de win es /wʌn/; /wɒn/ es la moneda coreana",
+  "tipo": "manual"
+ },
+ "lawyer": {
+  "antes": {
+   "ipa": "ˈlɔːjə",
+   "variants": [
+    "ˈlɔɪ.ə"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈlɔɪ.ə",
+   "variants": [
+    "ˈlɔːjə"
+   ]
+  },
+  "motivo": "forma principal según EPD y Cambridge",
+  "tipo": "manual"
+ },
+ "lawyers": {
+  "antes": {
+   "ipa": "ˈlɔːjəz",
+   "variants": [
+    "ˈlɔɪ.əz"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈlɔɪ.əz",
+   "variants": [
+    "ˈlɔːjəz"
+   ]
+  },
+  "motivo": "forma principal según EPD y Cambridge",
+  "tipo": "manual"
+ },
+ "enjoyed": {
+  "antes": {
+   "ipa": "enˈdʒɔɪd",
+   "variants": [
+    "ɪnˈdʒɔɪd"
+   ]
+  },
+  "despues": {
+   "ipa": "ɪnˈdʒɔɪd",
+   "variants": [
+    "enˈdʒɔɪd"
+   ]
+  },
+  "motivo": "prefijo en- con /ɪ/ como principal",
+  "tipo": "manual"
+ },
+ "enjoying": {
+  "antes": {
+   "ipa": "enˈdʒɔɪ.ɪŋ",
+   "variants": [
+    "ɪnˈdʒɔɪ.ɪŋ"
+   ]
+  },
+  "despues": {
+   "ipa": "ɪnˈdʒɔɪ.ɪŋ",
+   "variants": [
+    "enˈdʒɔɪ.ɪŋ"
+   ]
+  },
+  "motivo": "prefijo en- con /ɪ/ como principal",
+  "tipo": "manual"
+ },
+ "concert": {
+  "antes": {
+   "ipa": "kənˈsɜːt",
+   "variants": [
+    "ˈkɒnsət"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈkɒn.sət",
+   "variants": []
+  },
+  "motivo": "el sustantivo; /kənˈsɜːt/ es el verbo, muy raro",
+  "tipo": "manual"
+ },
+ "existence": {
+  "antes": {
+   "ipa": "eɡˈzɪstəns",
+   "variants": [
+    "ɪɡˈzɪstəns"
+   ]
+  },
+  "despues": {
+   "ipa": "ɪɡˈzɪs.təns",
+   "variants": [
+    "eɡˈzɪstəns"
+   ]
+  },
+  "motivo": "prefijo ex- con /ɪ/ como principal",
+  "tipo": "manual"
+ },
+ "worldwide": {
+  "antes": {
+   "ipa": "ˈwɜːldˌwaɪd",
+   "variants": [
+    "ˌwɜːldˈwaɪd"
+   ]
+  },
+  "despues": {
+   "ipa": "ˌwɜːldˈwaɪd",
+   "variants": [
+    "ˈwɜːldˌwaɪd"
+   ]
+  },
+  "motivo": "primario en wide",
+  "tipo": "manual"
+ },
+ "concrete": {
+  "antes": {
+   "ipa": "kəŋˈkriːt",
+   "variants": [
+    "ˈkɒŋkriːt"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈkɒŋ.kriːt",
+   "variants": [
+    "kəŋˈkriːt"
+   ]
+  },
+  "motivo": "el sustantivo y adjetivo se acentúan en la primera",
+  "tipo": "manual"
+ },
+ "length": {
+  "antes": {
+   "ipa": "ˈleŋkθ",
+   "variants": [
+    "ˈleŋθ"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈleŋθ",
+   "variants": [
+    "ˈleŋkθ"
+   ]
+  },
+  "motivo": "/ˈleŋθ/ como principal; /ŋkθ/ queda como variante",
+  "tipo": "manual"
+ },
+ "education": {
+  "antes": {
+   "ipa": "ˌed.jʊˈkeɪ.ʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌed.jʊˈkeɪ.ʃən",
+   "variants": [
+    "ˌedʒ.ʊˈkeɪ.ʃən"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "educational": {
+  "antes": {
+   "ipa": "ˌed.jʊˈkeɪ.ʃə.nəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌed.jʊˈkeɪ.ʃə.nəl",
+   "variants": [
+    "ˌedʒ.ʊˈkeɪ.ʃən.əl"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "income": {
+  "antes": {
+   "ipa": "ˈɪnˌkʌm",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈɪnˌkʌm",
+   "variants": [
+    "ˈɪŋ.kʌm"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "interested": {
+  "antes": {
+   "ipa": "ˈɪnt.ə.rɪs.tɪd",
+   "variants": [
+    "ˈɪn.trɪs.tɪd"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈɪnt.ə.rɪs.tɪd",
+   "variants": [
+    "ˈɪn.trɪs.tɪd",
+    "ˈɪn.tres.tɪd"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "interests": {
+  "antes": {
+   "ipa": "ˈɪn.tə.rɪsts",
+   "variants": [
+    "ˈɪn.trɪsts"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈɪn.tə.rɪsts",
+   "variants": [
+    "ˈɪn.trɪsts",
+    "ˈɪn.trests",
+    "ˈɪntrəsts"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "necessary": {
+  "antes": {
+   "ipa": "ˈnesəsəri",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈnesəsəri",
+   "variants": [
+    "ˈnes.ə.ser.i"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "environment": {
+  "antes": {
+   "ipa": "ɪnˈvaɪ.rən.mənt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪnˈvaɪ.rən.mənt",
+   "variants": [
+    "ɪnˈvaɪ.rə.mənt",
+    "ɪnˈvaɪərənmənt"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "environmental": {
+  "antes": {
+   "ipa": "ɪnˌvaɪ.rənˈmen.təl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪnˌvaɪ.rənˈmen.təl",
+   "variants": [
+    "ɪnˌvaɪ.rəˈmen.təl",
+    "ɪnˌvaɪərənˈmentəl"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "apparently": {
+  "antes": {
+   "ipa": "əˈpeərəntli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "əˈpeərəntli",
+   "variants": [
+    "əˈpær.ənt.li"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "vehicle": {
+  "antes": {
+   "ipa": "ˈviː.ɪ.kəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈviː.ɪ.kəl",
+   "variants": [
+    "ˈvɪə.kəl",
+    "ˈviːɪkl"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "vehicles": {
+  "antes": {
+   "ipa": "ˈviː.ɪ.kl̩z",
+   "variants": [
+    "ˈviːɪkəlz"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈviː.ɪ.kl̩z",
+   "variants": [
+    "ˈviːɪkəlz",
+    "ˈvɪə.kəlz",
+    "ˈviːɪklz"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "alternative": {
+  "antes": {
+   "ipa": "ɔːlˈtɜː.nə.tɪv",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɔːlˈtɜː.nə.tɪv",
+   "variants": [
+    "ɒlˈtɜː.nə.tɪv"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "specifically": {
+  "antes": {
+   "ipa": "spɪˈsɪf.ɪ.kli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "spɪˈsɪf.ɪ.kli",
+   "variants": [
+    "spəˈsɪf.ɪ.kəl.i"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "literature": {
+  "antes": {
+   "ipa": "ˈlɪt.ə.rə.tʃə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈlɪt.ə.rə.tʃə",
+   "variants": [
+    "ˈlɪt.rə.tʃə"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "perfectly": {
+  "antes": {
+   "ipa": "ˈpɜː.fɪkt.li",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɜː.fɪkt.li",
+   "variants": [
+    "ˈpɜː.fekt.li"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "assault": {
+  "antes": {
+   "ipa": "əˈsɔːlt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "əˈsɔːlt",
+   "variants": [
+    "əˈsɒlt"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "electricity": {
+  "antes": {
+   "ipa": "ɪˌlekˈtrɪsɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪˌlekˈtrɪsɪti",
+   "variants": [
+    "ˌel.ɪkˈtrɪs.ə.ti"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "virus": {
+  "antes": {
+   "ipa": "ˈvaɪ.rəs",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈvaɪ.rəs",
+   "variants": [
+    "ˈvaɪə.rəs"
+   ]
+  },
+  "tipo": "variante"
+ },
+ "university": {
+  "antes": {
+   "ipa": "ˌjuːnɪˈvɜːsɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌjuːnɪˈvɜːsɪti",
+   "variants": [
+    "ˌjuː.nɪˈvɜː.sə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "possible": {
+  "antes": {
+   "ipa": "ˈpɒsɪbəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɒsɪbəl",
+   "variants": [
+    "ˈpɒs.ə.bəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "community": {
+  "antes": {
+   "ipa": "kəˈmjuːnɪ.ti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kəˈmjuːnɪ.ti",
+   "variants": [
+    "kəˈmjuː.nə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "security": {
+  "antes": {
+   "ipa": "sɪˈkjʊərɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "sɪˈkjʊərɪti",
+   "variants": [
+    "sɪˈkjʊə.rə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "July": {
+  "antes": {
+   "ipa": "dʒʊˈlaɪ",
+   "variants": [
+    "dʒəˈlaɪ"
+   ]
+  },
+  "despues": {
+   "ipa": "dʒʊˈlaɪ",
+   "variants": [
+    "dʒəˈlaɪ",
+    "dʒuˈlaɪ"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "policy": {
+  "antes": {
+   "ipa": "ˈpɒl.ɪ.si",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɒl.ɪ.si",
+   "variants": [
+    "ˈpɒl.ə.si"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "quality": {
+  "antes": {
+   "ipa": "ˈkwɒlɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈkwɒlɪti",
+   "variants": [
+    "ˈkwɒl.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "popular": {
+  "antes": {
+   "ipa": "ˈpɒp.jʊ.lə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɒp.jʊ.lə",
+   "variants": [
+    "ˈpɒp.jə.lə"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "specific": {
+  "antes": {
+   "ipa": "spɪˈsɪf.ɪk",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "spɪˈsɪf.ɪk",
+   "variants": [
+    "spəˈsɪf.ɪk"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "population": {
+  "antes": {
+   "ipa": "ˌpɒp.jʊˈleɪ.ʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌpɒp.jʊˈleɪ.ʃən",
+   "variants": [
+    "ˌpɒp.jəˈleɪ.ʃən"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "positive": {
+  "antes": {
+   "ipa": "ˈpɒzɪtɪv",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɒzɪtɪv",
+   "variants": [
+    "ˈpɒz.ə.tɪv"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "ability": {
+  "antes": {
+   "ipa": "əˈbɪl.ɪ.ti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "əˈbɪl.ɪ.ti",
+   "variants": [
+    "əˈbɪl.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "definitely": {
+  "antes": {
+   "ipa": "ˈdef.ɪ.nɪt.li",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈdef.ɪ.nɪt.li",
+   "variants": [
+    "ˈdef.ɪ.nət.li"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "particularly": {
+  "antes": {
+   "ipa": "pəˈtɪkjʊləli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "pəˈtɪkjʊləli",
+   "variants": [
+    "pəˈtɪk.jə.lə.li"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "opportunity": {
+  "antes": {
+   "ipa": "ˌɒp.əˈtjuː.nɪ.ti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌɒp.əˈtjuː.nɪ.ti",
+   "variants": [
+    "ˌɒp.əˈtʃuː.nə.ti",
+    "ˌɒpəˈtjuːnəti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "regular": {
+  "antes": {
+   "ipa": "ˈreɡjʊlə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈreɡjʊlə",
+   "variants": [
+    "ˈreɡ.jə.lə"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "secretary": {
+  "antes": {
+   "ipa": "ˈsekrɪtəri",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈsekrɪtəri",
+   "variants": [
+    "ˈsek.rə.tər.i"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "anymore": {
+  "antes": {
+   "ipa": "ˌenɪˈmɔː",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌenɪˈmɔː",
+   "variants": [
+    "ˌen.iˈmɔː"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "majority": {
+  "antes": {
+   "ipa": "məˈdʒɒ.rɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "məˈdʒɒ.rɪti",
+   "variants": [
+    "məˈdʒɒr.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "activities": {
+  "antes": {
+   "ipa": "ækˈtɪv.ɪ.tiz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ækˈtɪv.ɪ.tiz",
+   "variants": [
+    "ækˈtɪv.ə.tiz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "anyway": {
+  "antes": {
+   "ipa": "ˈenɪˌweɪ",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈenɪˌweɪ",
+   "variants": [
+    "ˈen.i.weɪ"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "competition": {
+  "antes": {
+   "ipa": "ˌkɒmpɪˈtɪʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌkɒmpɪˈtɪʃən",
+   "variants": [
+    "ˌkɒm.pəˈtɪʃ.ən"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "easily": {
+  "antes": {
+   "ipa": "ˈiː.zɪ.li",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈiː.zɪ.li",
+   "variants": [
+    "ˈiː.zəl.i"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "reality": {
+  "antes": {
+   "ipa": "riˈælɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "riˈælɪti",
+   "variants": [
+    "riˈæl.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "characters": {
+  "antes": {
+   "ipa": "ˈkærɪktəz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈkærɪktəz",
+   "variants": [
+    "ˈkær.ək.təz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "responsible": {
+  "antes": {
+   "ipa": "rɪˈspɒnsɪbəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "rɪˈspɒnsɪbəl",
+   "variants": [
+    "rɪˈspɒn.sə.bəl",
+    "rɪˈspɒnsəbl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "executive": {
+  "antes": {
+   "ipa": "ɪɡˈzekjʊtɪv",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪɡˈzekjʊtɪv",
+   "variants": [
+    "ɪɡˈzek.jə.tɪv"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "activity": {
+  "antes": {
+   "ipa": "ækˈtɪv.ɪ.ti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ækˈtɪv.ɪ.ti",
+   "variants": [
+    "ækˈtɪv.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "everybody": {
+  "antes": {
+   "ipa": "ˈevrɪˌbɒdi",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈevrɪˌbɒdi",
+   "variants": [
+    "ˈev.riˌbɒd.i"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "authority": {
+  "antes": {
+   "ipa": "ɔːˈθɒrɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɔːˈθɒrɪti",
+   "variants": [
+    "ɔːˈθɒr.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "impossible": {
+  "antes": {
+   "ipa": "ɪmˈpɒs.ɪ.bəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪmˈpɒs.ɪ.bəl",
+   "variants": [
+    "ɪmˈpɒs.ə.bəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "possibly": {
+  "antes": {
+   "ipa": "ˈpɒsɪbli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɒsɪbli",
+   "variants": [
+    "ˈpɒs.ə.bli"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "responsibility": {
+  "antes": {
+   "ipa": "rɪˌspɒnsɪˈbɪlɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "rɪˌspɒnsɪˈbɪlɪti",
+   "variants": [
+    "rɪˌspɒn.sɪˈbɪl.ə.ti",
+    "rɪˌspɒnsəˈbɪləti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "strategy": {
+  "antes": {
+   "ipa": "ˈstræt.ɪ.dʒi",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈstræt.ɪ.dʒi",
+   "variants": [
+    "ˈstræt.ə.dʒi"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "medicine": {
+  "antes": {
+   "ipa": "ˈmed.ɪ.sɪn",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈmed.ɪ.sɪn",
+   "variants": [
+    "ˈmed.ɪ.sən",
+    "ˈmed.sən"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "anywhere": {
+  "antes": {
+   "ipa": "ˈenɪweə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈenɪweə",
+   "variants": [
+    "ˈen.i.weə"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "capacity": {
+  "antes": {
+   "ipa": "kəˈpæsɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kəˈpæsɪti",
+   "variants": [
+    "kəˈpæs.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "communities": {
+  "antes": {
+   "ipa": "kəˈmjuːnɪtiz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "kəˈmjuːnɪtiz",
+   "variants": [
+    "kəˈmjuː.nə.tiz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "policies": {
+  "antes": {
+   "ipa": "ˈpɒl.ɪ.siz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɒl.ɪ.siz",
+   "variants": [
+    "ˈpɒl.ə.siz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "purchase": {
+  "antes": {
+   "ipa": "ˈpɜːtʃɪs",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɜːtʃɪs",
+   "variants": [
+    "ˈpɜː.tʃəs"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "terrible": {
+  "antes": {
+   "ipa": "ˈterɪbəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈterɪbəl",
+   "variants": [
+    "ˈter.ə.bəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "everywhere": {
+  "antes": {
+   "ipa": "ˈevrɪˌweə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈevrɪˌweə",
+   "variants": [
+    "ˈev.ri.weə"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "facilities": {
+  "antes": {
+   "ipa": "fəˈsɪlɪtiz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "fəˈsɪlɪtiz",
+   "variants": [
+    "fəˈsɪl.ə.tiz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "holiday": {
+  "antes": {
+   "ipa": "ˈhɒlɪˌdeɪ",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈhɒlɪˌdeɪ",
+   "variants": [
+    "ˈhɒl.ə.deɪ"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "identity": {
+  "antes": {
+   "ipa": "aɪˈdentɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "aɪˈdentɪti",
+   "variants": [
+    "aɪˈden.tə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "argument": {
+  "antes": {
+   "ipa": "ˈɑːɡjʊmənt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈɑːɡjʊmənt",
+   "variants": [
+    "ˈɑːɡ.jə.mənt"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "corporate": {
+  "antes": {
+   "ipa": "ˈkɔːprɪt",
+   "variants": [
+    "ˈkɔːpərɪt"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈkɔːprɪt",
+   "variants": [
+    "ˈkɔːpərɪt",
+    "ˈkɔː.pər.ət"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "documents": {
+  "antes": {
+   "ipa": "ˈdɒkjʊmənts",
+   "variants": [
+    "ˈdɒkjʊments"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈdɒkjʊmənts",
+   "variants": [
+    "ˈdɒkjʊments",
+    "ˈdɒk.jə.mənts",
+    "ˈdɒk.jə.ments"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "authorities": {
+  "antes": {
+   "ipa": "ɔːˈθɒrɪtiz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɔːˈθɒrɪtiz",
+   "variants": [
+    "ɔːˈθɒr.ə.tiz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "chicken": {
+  "antes": {
+   "ipa": "ˈtʃɪkən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈtʃɪkən",
+   "variants": [
+    "ˈtʃɪk.ɪn"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "incredible": {
+  "antes": {
+   "ipa": "ɪnˈkredɪbəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪnˈkredɪbəl",
+   "variants": [
+    "ɪnˈkred.ə.bəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "unfortunately": {
+  "antes": {
+   "ipa": "ʌnˈfɔːtʃənɪtli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ʌnˈfɔːtʃənɪtli",
+   "variants": [
+    "ʌnˈfɔː.tʃən.ət.li"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "opportunities": {
+  "antes": {
+   "ipa": "ˌɒp.əˈtjuː.nɪ.tiz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌɒp.əˈtjuː.nɪ.tiz",
+   "variants": [
+    "ˌɒp.əˈtʃuː.nə.tiz",
+    "ˌɒpəˈtjuːnətiz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "relevant": {
+  "antes": {
+   "ipa": "ˈrelɪvənt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈrelɪvənt",
+   "variants": [
+    "ˈrel.ə.vənt"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "facility": {
+  "antes": {
+   "ipa": "fəˈsɪlɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "fəˈsɪlɪti",
+   "variants": [
+    "fəˈsɪl.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "possibility": {
+  "antes": {
+   "ipa": "ˌpɒs.ɪˈbɪl.ɪ.ti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌpɒs.ɪˈbɪl.ɪ.ti",
+   "variants": [
+    "ˌpɒs.əˈbɪl.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "accurate": {
+  "antes": {
+   "ipa": "ˈæk.jʊ.rɪt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈæk.jʊ.rɪt",
+   "variants": [
+    "ˈæk.jə.rət"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "category": {
+  "antes": {
+   "ipa": "ˈkæt.ɪ.ɡə.ri",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈkæt.ɪ.ɡə.ri",
+   "variants": [
+    "ˈkæt.ə.ɡri",
+    "ˈkætəɡəri"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "ultimately": {
+  "antes": {
+   "ipa": "ˈʌl.tɪ.mɪt.li",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈʌl.tɪ.mɪt.li",
+   "variants": [
+    "ˈʌl.tɪ.mət.li"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "anybody": {
+  "antes": {
+   "ipa": "ˈenɪˌbɒdi",
+   "variants": [
+    "ˈenɪbədi"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈenɪˌbɒdi",
+   "variants": [
+    "ˈenɪbədi",
+    "ˈen.iˌbɒd.i"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "manufacturing": {
+  "antes": {
+   "ipa": "ˌmænjʊˈfæktʃərɪŋ",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌmænjʊˈfæktʃərɪŋ",
+   "variants": [
+    "ˌmæn.jəˈfæk.tʃə.rɪŋ"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "severe": {
+  "antes": {
+   "ipa": "səˈvɪə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "səˈvɪə",
+   "variants": [
+    "sɪˈvɪə"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "deputy": {
+  "antes": {
+   "ipa": "ˈdepjʊti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈdepjʊti",
+   "variants": [
+    "ˈdep.jə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "personality": {
+  "antes": {
+   "ipa": "ˌpɜːsəˈnælɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌpɜːsəˈnælɪti",
+   "variants": [
+    "ˌpɜː.sənˈæl.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "ultimate": {
+  "antes": {
+   "ipa": "ˈʌltɪmɪt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈʌltɪmɪt",
+   "variants": [
+    "ˈʌl.tɪ.mət"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "principal": {
+  "antes": {
+   "ipa": "ˈprɪn.sɪ.pəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈprɪn.sɪ.pəl",
+   "variants": [
+    "ˈprɪn.sə.pəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "regularly": {
+  "antes": {
+   "ipa": "ˈreɡ.jʊ.lə.li",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈreɡ.jʊ.lə.li",
+   "variants": [
+    "ˈreɡ.jə.lə.li"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "valuable": {
+  "antes": {
+   "ipa": "ˈvæljʊbəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈvæljʊbəl",
+   "variants": [
+    "ˈvæl.jə.bəl",
+    "ˈvæljuəbl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "document": {
+  "antes": {
+   "ipa": "ˈdɒkjʊmənt",
+   "variants": [
+    "ˈdɒkjʊment"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈdɒkjʊmənt",
+   "variants": [
+    "ˈdɒkjʊment",
+    "ˈdɒk.jə.mənt",
+    "ˈdɒk.jə.ment"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "regulations": {
+  "antes": {
+   "ipa": "ˌreɡjʊˈleɪʃənz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌreɡjʊˈleɪʃənz",
+   "variants": [
+    "ˌreɡ.jəˈleɪ.ʃənz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "cabinet": {
+  "antes": {
+   "ipa": "ˈkæb.ɪ.nɪt",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈkæb.ɪ.nɪt",
+   "variants": [
+    "ˈkæb.ɪ.nət"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "necessarily": {
+  "antes": {
+   "ipa": "ˌnesəˈserɪli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌnesəˈserɪli",
+   "variants": [
+    "nes.əˈser.əl.i"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "primarily": {
+  "antes": {
+   "ipa": "ˈpraɪmərɪli",
+   "variants": [
+    "praɪˈmerɪli"
+   ]
+  },
+  "despues": {
+   "ipa": "ˈpraɪmərɪli",
+   "variants": [
+    "praɪˈmerɪli",
+    "praɪˈmer.əl.i"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "regardless": {
+  "antes": {
+   "ipa": "rɪˈɡɑːd.lɪs",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "rɪˈɡɑːd.lɪs",
+   "variants": [
+    "rɪˈɡɑːd.ləs"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "everyday": {
+  "antes": {
+   "ipa": "ˌevrɪˈdeɪ",
+   "variants": [
+    "ˈevrɪˌdeɪ"
+   ]
+  },
+  "despues": {
+   "ipa": "ˌevrɪˈdeɪ",
+   "variants": [
+    "ˈevrɪˌdeɪ",
+    "ˈev.ri.deɪ"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "purchased": {
+  "antes": {
+   "ipa": "ˈpɜːtʃɪst",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈpɜːtʃɪst",
+   "variants": [
+    "ˈpɜː.tʃəst"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "reputation": {
+  "antes": {
+   "ipa": "ˌrepjʊˈteɪʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌrepjʊˈteɪʃən",
+   "variants": [
+    "ˌrep.jəˈteɪ.ʃən"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "ridiculous": {
+  "antes": {
+   "ipa": "rɪˈdɪk.jʊ.ləs",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "rɪˈdɪk.jʊ.ləs",
+   "variants": [
+    "rɪˈdɪk.jə.ləs"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "formula": {
+  "antes": {
+   "ipa": "ˈfɔː.mjʊ.lə",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈfɔː.mjʊ.lə",
+   "variants": [
+    "ˈfɔː.mjə.lə"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "awareness": {
+  "antes": {
+   "ipa": "əˈweənɪs",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "əˈweənɪs",
+   "variants": [
+    "əˈweə.nəs"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "happiness": {
+  "antes": {
+   "ipa": "ˈhæpɪnɪs",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈhæpɪnɪs",
+   "variants": [
+    "ˈhæp.i.nəs"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "horrible": {
+  "antes": {
+   "ipa": "ˈhɒr.ɪ.bəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈhɒr.ɪ.bəl",
+   "variants": [
+    "ˈhɒr.ə.bəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "avenue": {
+  "antes": {
+   "ipa": "ˈævɪˌnjuː",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈævɪˌnjuː",
+   "variants": [
+    "ˈæv.ə.njuː"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "ordinary": {
+  "antes": {
+   "ipa": "ˈɔːdɪnəri",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈɔːdɪnəri",
+   "variants": [
+    "ˈɔː.dən.əri"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "principles": {
+  "antes": {
+   "ipa": "ˈprɪnsɪpəlz",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈprɪnsɪpəlz",
+   "variants": [
+    "ˈprɪn.sə.pəlz",
+    "ˈprɪnsəplz"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "memorial": {
+  "antes": {
+   "ipa": "mɪˈmɔːriəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "mɪˈmɔːriəl",
+   "variants": [
+    "məˈmɔː.ri.əl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "minority": {
+  "antes": {
+   "ipa": "maɪˈnɒr.ɪ.ti",
+   "variants": [
+    "mɪˈnɒr.ɪ.ti"
+   ]
+  },
+  "despues": {
+   "ipa": "maɪˈnɒr.ɪ.ti",
+   "variants": [
+    "mɪˈnɒr.ɪ.ti",
+    "maɪˈnɒr.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "priority": {
+  "antes": {
+   "ipa": "praɪˈɒrɪti",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "praɪˈɒrɪti",
+   "variants": [
+    "praɪˈɒr.ə.ti"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "visible": {
+  "antes": {
+   "ipa": "ˈvɪzɪbəl",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˈvɪzɪbəl",
+   "variants": [
+    "ˈvɪz.ə.bəl"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "incredibly": {
+  "antes": {
+   "ipa": "ɪnˈkredɪbli",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ɪnˈkredɪbli",
+   "variants": [
+    "ɪnˈkred.ə.bli"
+   ]
+  },
+  "tipo": "vocal-debil"
+ },
+ "regulation": {
+  "antes": {
+   "ipa": "ˌreɡjʊˈleɪʃən",
+   "variants": []
+  },
+  "despues": {
+   "ipa": "ˌreɡjʊˈleɪʃən",
+   "variants": [
+    "ˌreɡ.jəˈleɪ.ʃən"
+   ]
+  },
+  "tipo": "vocal-debil"
+ }
+}
