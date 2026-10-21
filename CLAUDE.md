@@ -13,7 +13,7 @@ Público: opositores de Secundaria Inglés, estudiantes de Estudios Ingleses y d
 - v1 sin cuentas: el progreso se guarda en `localStorage` (con try/catch). Firebase (plan gratuito) queda para una v2 con cuentas y sincronización.
 
 ## Datos: `words.json`
-Ya existe, con 123 palabras. Cada entrada:
+2123 palabras: las 123 primeras, revisadas a mano y con nota; las otras 2000, del banco ampliado cotejado con Cambridge (sin nota, patrones y nivel heurísticos), añadidas el 2026-10-21. Cada entrada:
 ```json
 {"word": "economic", "ipa": "ˌiː.kəˈnɒm.ɪk", "variants": ["ˌek.əˈnɒm.ɪk"],
  "patterns": ["acento", "schwa"], "level": 2, "note": "...", "error": "eˈkɒ.nɒ.mɪk"}
@@ -95,7 +95,7 @@ Hecho. Clave `fonorp.progress` = `{ v: 1, words: { palabra: { a: intentos, c: ac
 - Estados: `coinciden` (dos fuentes de acuerdo), `discrepan` (revisar en el EPD/LPD), `una-fuente` (solo Britfone). Excluye palabras gramaticales, coloquiales, malsonantes, nombres propios (salvo meses y días) y grafías americanas cuando existe la británica (color → colour); las de -ize se quedan.
 - Lote actual (2026-10-21): 2000 palabras → 1808 coinciden, 66 discrepan (fuera de la app), 126 solo Britfone. `banco/discrepancias.md` lista las discrepancias y las de una sola fuente. Revisión manual de 100 palabras de muestra (60 al azar + 40 de nivel 3): sin errores de transcripción.
 - **Cotejo con Cambridge (2026-10-21):** `node tools/cambridge.mjs` descarga la pronunciación UK de Cambridge (caché en `tools/.cache/cambridge/`), la compara con words.json y el banco, aplica `banco/revision-cambridge.json` (144 cambios revisados; informe en `banco/revision-cambridge.md`) y anota en cada candidata el campo `cambridge`: coincide 1839, ampliada 109 (variantes con /ə/ débil u otra forma RP), corregida 35, revisada-a-mano 17. Las 123 de words.json coinciden todas con Cambridge. Si se vuelve a pasar `importar.mjs`, pasar después `cambridge.mjs` para reaplicar la revisión.
-- Patrones y nivel son heurísticos; las notas quedan vacías. Nada de este banco entra en `words.json` sin revisión de Miguel.
+- Patrones y nivel son heurísticos; las notas quedan vacías. Las 2000 del lote actual ya están en `words.json` (2026-10-21, a petición de Miguel); un lote nuevo no entra sin su revisión.
 
 ## Pendiente
 Revisar todas las transcripciones de `words.json` contra el Cambridge English Pronouncing Dictionary o el Longman Pronunciation Dictionary. Se publicó sin esta revisión por decisión de Miguel (uso personal y amigos). Cotejadas ya con el Cambridge Dictionary online (2026-10-21): las 123 coinciden; falta el contraste con el EPD/LPD impreso.
